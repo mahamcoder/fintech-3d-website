@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { ArrowRight, BarChart3, TrendingUp, Users, Database, Cpu, Activity, Globe, Box, Network } from 'lucide-react';
+import {
+  ArrowRight, BarChart3, TrendingUp, Users, Database,
+  Cpu, Activity, Globe, Box, Network, Quote, Star
+} from 'lucide-react';
 import { Button } from '../components/ui/Button';
 import { HeroScene } from '../components/3d/HeroScene';
 import Ai from '../assets/image.png';
@@ -337,76 +340,65 @@ export const Home = () => {
               </span>
 
 
-             
+
             </h4>
 
             <p className="text-gray-500 text-lg md:text-xl max-w-2xl mx-auto mt-10 leading-relaxed font-sans font-light">
               Collaborating with global pioneers to build financial architectures and AI-driven products that redefine the boundaries of what's possible in capital markets.
             </p>
 
-           
+
           </div>
         </div>
       </section>
-{/* section6: client reviews (Horizontal Ticker Rows) */}
-<section className="py-24 md:py-32 bg-[#F8F5F2] relative z-10 overflow-hidden flex flex-col items-center">
-  {/* Modern Mesh Gradient Background */}
-  <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
-    <motion.div
-      animate={{
-        x: [0, 100, 0],
-        y: [0, 50, 0],
-      }}
-      transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-      className="absolute top-[-10%] left-[-5%] w-[500px] h-[500px] bg-sapforce-accent/10 rounded-full blur-[120px]"
-    ></motion.div>
-    <motion.div
-      animate={{
-        x: [0, -80, 0],
-        y: [0, 100, 0],
-      }}
-      transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-      className="absolute bottom-[-10%] right-[5%] w-[600px] h-[600px] bg-[#92d5d8]/15 rounded-full blur-[140px]"
-    ></motion.div>
-    <motion.div
-      animate={{
-        scale: [1, 1.2, 1],
-        opacity: [0.1, 0.2, 0.1],
-      }}
-      transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-      className="absolute top-[30%] left-[40%] w-[400px] h-[400px] bg-[#052e23]/5 rounded-full blur-[100px]"
-    ></motion.div>
-    
-    {/* Subtle Noise/Grain Texture Overlay */}
-    <div className="absolute inset-0 opacity-[0.03] mix-blend-overlay bg-[url('https://grain-y.com/images/grain-dark.png')] pointer-events-none"></div>
-  </div>
+      {/* section6: client reviews (Horizontal Ticker Rows) */}
+      <section className="py-24 md:py-32 bg-[#05110e] relative z-10 overflow-hidden flex flex-col items-center">
+        {/* Modern Mesh Gradient Background (Darker/Cinematic) */}
+        <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+          <motion.div
+            animate={{
+              x: [0, 50, 0],
+              y: [0, 30, 0],
+            }}
+            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+            className="absolute top-[-20%] left-[-10%] w-[800px] h-[800px] bg-sapforce-accent/10 rounded-full blur-[150px]"
+          ></motion.div>
+          <motion.div
+            animate={{
+              x: [0, -40, 0],
+              y: [0, 60, 0],
+            }}
+            transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
+            className="absolute bottom-[-20%] right-[0%] w-[900px] h-[900px] bg-[#92d5d8]/5 rounded-full blur-[180px]"
+          ></motion.div>
 
-  <div className="container mx-auto px-6 text-center mb-20 relative z-30">
-    <motion.h2 
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      className="text-4xl md:text-5xl font-black text-black tracking-tighter uppercase"
-    >
-      What our clients said
-    </motion.h2>
-  </div>
+          {/* Subtle Noise/Grain Texture Overlay */}
+          <div className="absolute inset-0 opacity-[0.05] mix-blend-overlay bg-[url('https://grain-y.com/images/grain-dark.png')] pointer-events-none"></div>
+        </div>
 
-  <div className="w-full flex flex-col gap-10 md:gap-14 overflow-hidden relative">
-    {/* Row 1: Left */}
-    <TickerRow items={CLIENT_BUBBLES.slice(0, 4)} direction="left" speed={70} />
-    
-    {/* Row 2: Right */}
-    <TickerRow items={CLIENT_BUBBLES.slice(4, 8)} direction="right" speed={80} />
-    
-    {/* Row 3: Left */}
-    <TickerRow items={CLIENT_BUBBLES.slice(8, 11)} direction="left" speed={75} />
+        <div className="container mx-auto px-6 text-center mb-20 relative z-30">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-4xl md:text-5xl font-black text-white tracking-tighter uppercase"
+          >
+            What our clients said
+          </motion.h2>
+        </div>
 
-    {/* Gradient Overlays for smooth edges */}
-    <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#F8F5F2] to-transparent z-20 pointer-events-none"></div>
-    <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-[#F8F5F2] to-transparent z-20 pointer-events-none"></div>
-  </div>
-</section>
+        <div className="w-full flex flex-col gap-10 md:gap-14 overflow-hidden relative">
+          {/* Row 1: Left */}
+          <TickerRow items={CLIENT_BUBBLES.slice(0, 4)} direction="left" speed={90} />
+
+          {/* Row 2: Right */}
+          <TickerRow items={CLIENT_BUBBLES.slice(4, 8)} direction="right" speed={100} />
+
+          {/* Gradient Overlays for smooth edges */}
+          <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#05110e] to-transparent z-20 pointer-events-none"></div>
+          <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-[#05110e] to-transparent z-20 pointer-events-none"></div>
+        </div>
+      </section>
 
 
       {/* SECTION 5: CTA SECTION */}
@@ -445,22 +437,67 @@ export const Home = () => {
 };
 
 const CLIENT_BUBBLES = [
-  { text: "This is the future!", img: "https://i.pravatar.cc/150?img=11" },
-  { text: "Typing ...", img: "https://i.pravatar.cc/150?img=33" },
-  { text: "Yes.", img: "https://i.pravatar.cc/150?img=12" },
-  { text: "Highly Intuitive.", img: "https://i.pravatar.cc/150?img=47" },
-  { text: "No way!", img: "https://i.pravatar.cc/150?img=59" },
-  { text: "Incredible Growth.", img: "https://i.pravatar.cc/150?img=44" },
-  { text: "I agree, it's the future!", img: "https://i.pravatar.cc/150?img=5" },
-  { text: "Proprietary Tech.", img: "https://i.pravatar.cc/150?img=15" },
-  { text: "Midjourney Style.", img: "https://i.pravatar.cc/150?img=8" },
-  { text: "Incredible ROI.", img: "https://i.pravatar.cc/150?img=22" },
-  { text: "Game changer.", img: "https://i.pravatar.cc/150?img=31" },
+  {
+    name: "Alexander Vance",
+    role: "Portfolio Manager, Apex Capital",
+    text: "The institutional-grade analytics provided a level of clarity we simply couldn't find elsewhere. Their AI models are transformative.",
+    rating: 5,
+    img: "https://i.pravatar.cc/150?img=11"
+  },
+  {
+    name: "Sarah Chen",
+    role: "Head of AI, Global Tech Solutions",
+    text: "Implementing their Agentic AI workflows reduced our operational overhead by 40%. The reliability is unmatched in the industry.",
+    rating: 5,
+    img: "https://i.pravatar.cc/150?img=33"
+  },
+  {
+    name: "Marcus Thorne",
+    role: "Lead Analyst, Sovereign Wealth Fund",
+    text: "A precision-engineered approach to financial data. The custom LLMs they built for our proprietary strategies are game-changing.",
+    rating: 5,
+    img: "https://i.pravatar.cc/150?img=12"
+  },
+  {
+    name: "Elena Rodriguez",
+    role: "Director of Research, Arca Group",
+    text: "The depth of their multi-industry analysis is impressive. They don't just provide data; they provide actionable strategic wisdom.",
+    rating: 4,
+    img: "https://i.pravatar.cc/150?img=47"
+  },
+  {
+    name: "Julian Kross",
+    role: "CEO, QuantEdge Financial",
+    text: "Their architecture for capital markets is the future. Seamless integration and high-performance output across the board.",
+    rating: 5,
+    img: "https://i.pravatar.cc/150?img=59"
+  },
+  {
+    name: "Dr. Amara Okoro",
+    role: "Chief Strategy Officer, InvestCore",
+    text: "High-stakes decisions require high-fidelity insights. This team delivers exactly that, fused with cutting-edge AI automation.",
+    rating: 5,
+    img: "https://i.pravatar.cc/150?img=44"
+  },
+  {
+    name: "Thomas Wright",
+    role: "Investment Partner, BridgePoint",
+    text: "Exceptional consultation and after-sales service. Their attention to detail in financial engineering is world-class.",
+    rating: 5,
+    img: "https://i.pravatar.cc/150?img=5"
+  },
+  {
+    name: "Sophia Liang",
+    role: "Founder, Fintech Innovators",
+    text: "The ROI we've seen since adopting their Sovereign Wealth models has been significant. Highly intuitive and powerful platforms.",
+    rating: 5,
+    img: "https://i.pravatar.cc/150?img=15"
+  }
 ];
 
 const TickerRow = ({ items, direction = "left", speed = 60 }) => {
   const duplicatedItems = [...items, ...items, ...items, ...items]; // Quadruple to ensure fill
-  
+
   return (
     <div className="flex w-full whitespace-nowrap">
       <motion.div
@@ -480,12 +517,44 @@ const TickerRow = ({ items, direction = "left", speed = 60 }) => {
         {duplicatedItems.map((item, idx) => (
           <div
             key={idx}
-            className="bg-white px-6 py-4 rounded-full flex items-center gap-4 shadow-xl shadow-black/5 border border-black/[0.03] hover:scale-105 transition-transform duration-500 cursor-pointer"
+            className="w-[400px] md:w-[550px] bg-white/5 backdrop-blur-xl border border-white/10 p-8 rounded-3xl flex flex-col gap-6 relative group hover:bg-white/10 transition-all duration-500 cursor-pointer"
           >
-            <div className="w-10 h-10 rounded-full overflow-hidden border border-black/5 flex-shrink-0">
-              <img src={item.img} alt="review" className="w-full h-full object-cover" />
+            {/* Top Quote Icon */}
+            <Quote className="absolute top-6 left-6 text-sapforce-accent/40 rotate-180" size={32} />
+
+            <div className="flex flex-col gap-4 mt-6">
+              {/* Star Rating */}
+              <div className="flex gap-1 justify-center">
+                {[...Array(5)].map((_, i) => (
+                  <Star
+                    key={i}
+                    size={16}
+                    className={i < item.rating ? "fill-yellow-500 text-yellow-500" : "text-white/20"}
+                  />
+                ))}
+              </div>
+
+              {/* Testimonial Text */}
+              <p className="text-white/80 text-center italic font-light leading-relaxed whitespace-normal px-4">
+                "{item.text}"
+              </p>
+
+              {/* Client Info */}
+              <div className="flex flex-col items-center mt-2">
+                <span className="text-sapforce-accent font-bold text-lg tracking-tight">
+                  {item.name}
+                </span>
+                <span className="text-white/40 text-[10px] uppercase tracking-widest font-black mt-1">
+                  {item.role}
+                </span>
+              </div>
             </div>
-            <span className="text-base md:text-lg font-medium text-black">{item.text}</span>
+
+            {/* Bottom Quote Icon */}
+            <Quote className="absolute bottom-6 right-6 text-sapforce-accent/40" size={32} />
+
+            {/* Decorative Glow */}
+            <div className="absolute inset-0 bg-gradient-to-br from-sapforce-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-3xl pointer-events-none"></div>
           </div>
         ))}
       </motion.div>

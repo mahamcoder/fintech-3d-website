@@ -4,26 +4,26 @@ import { Sphere, MeshDistortMaterial, Float, Stars } from '@react-three/drei';
 import * as THREE from 'three';
 
 // ── Palette ──────────────────────────────────────────────────────────────────
-const TEAL_LIGHT  = new THREE.Color('#92d5d8');
-const TEAL_MID    = new THREE.Color('#59918F');
-const DARK_GREEN  = new THREE.Color('#052e23');
-const WHITE       = new THREE.Color('#ffffff');
+const TEAL_LIGHT = new THREE.Color('#92d5d8');
+const TEAL_MID = new THREE.Color('#59918F');
+const DARK_GREEN = new THREE.Color('#052e23');
+const WHITE = new THREE.Color('#ffffff');
 
 // ── Node positions ────────────────────────────────────────────────────────────
 const NODE_CONFIGS = [
-  { pos: [0,    0,    0  ], radius: 0.55, color: TEAL_LIGHT,  distort: 0.55, speed: 1.2 },
-  { pos: [2.2,  1.1,  -0.8], radius: 0.32, color: TEAL_MID,   distort: 0.45, speed: 1.6 },
-  { pos: [-1.8, 1.4, -0.5], radius: 0.25, color: WHITE,       distort: 0.40, speed: 2.0 },
-  { pos: [1.3, -1.6, -0.3], radius: 0.28, color: TEAL_MID,   distort: 0.50, speed: 1.8 },
-  { pos: [-1.4,-1.2,  0.4], radius: 0.20, color: TEAL_LIGHT,  distort: 0.60, speed: 2.2 },
-  { pos: [3.0, -0.5, -1.2], radius: 0.18, color: WHITE,       distort: 0.35, speed: 1.4 },
-  { pos: [-2.6, 0.3, -1.0], radius: 0.22, color: TEAL_MID,   distort: 0.42, speed: 1.9 },
-  { pos: [0.8,  2.5, -0.6], radius: 0.15, color: TEAL_LIGHT,  distort: 0.50, speed: 2.5 },
+  { pos: [0, 0, 0], radius: 0.55, color: TEAL_LIGHT, distort: 0.55, speed: 1.2 },
+  { pos: [2.2, 1.1, -0.8], radius: 0.32, color: TEAL_MID, distort: 0.45, speed: 1.6 },
+  { pos: [-1.8, 1.4, -0.5], radius: 0.25, color: WHITE, distort: 0.40, speed: 2.0 },
+  { pos: [1.3, -1.6, -0.3], radius: 0.28, color: TEAL_MID, distort: 0.50, speed: 1.8 },
+  { pos: [-1.4, -1.2, 0.4], radius: 0.20, color: TEAL_LIGHT, distort: 0.60, speed: 2.2 },
+  { pos: [3.0, -0.5, -1.2], radius: 0.18, color: WHITE, distort: 0.35, speed: 1.4 },
+  { pos: [-2.6, 0.3, -1.0], radius: 0.22, color: TEAL_MID, distort: 0.42, speed: 1.9 },
+  { pos: [0.8, 2.5, -0.6], radius: 0.15, color: TEAL_LIGHT, distort: 0.50, speed: 2.5 },
 ];
 
 // ── Filament connections (index pairs) ───────────────────────────────────────
 const CONNECTIONS = [
-  [0,1],[0,2],[0,3],[0,4],[1,2],[1,5],[2,6],[3,4],[3,5],[4,6],[1,7],[2,7],
+  [0, 1], [0, 2], [0, 3], [0, 4], [1, 2], [1, 5], [2, 6], [3, 4], [3, 5], [4, 6], [1, 7], [2, 7],
 ];
 
 // ── Glowing Filament ──────────────────────────────────────────────────────────
@@ -39,7 +39,7 @@ const Filament = ({ start, end, color = TEAL_LIGHT, opacity = 0.35 }) => {
     const curve = new THREE.QuadraticBezierCurve3(s, mid, e);
     const pts = curve.getPoints(40);
     const positions = new Float32Array(pts.length * 3);
-    pts.forEach((p, i) => { positions[i*3]=p.x; positions[i*3+1]=p.y; positions[i*3+2]=p.z; });
+    pts.forEach((p, i) => { positions[i * 3] = p.x; positions[i * 3 + 1] = p.y; positions[i * 3 + 2] = p.z; });
     return { positions, mid };
   }, []);
 
@@ -52,7 +52,7 @@ const Filament = ({ start, end, color = TEAL_LIGHT, opacity = 0.35 }) => {
   return (
     <line ref={ref}>
       <bufferGeometry>
-        <bufferAttribute attach="attributes-position" array={positions} count={positions.length/3} itemSize={3} />
+        <bufferAttribute attach="attributes-position" array={positions} count={positions.length / 3} itemSize={3} />
       </bufferGeometry>
       <lineBasicMaterial color={color} transparent opacity={opacity} linewidth={1} />
     </line>
@@ -104,9 +104,9 @@ const ParticleField = ({ count = 180 }) => {
   const positions = useMemo(() => {
     const arr = new Float32Array(count * 3);
     for (let i = 0; i < count; i++) {
-      arr[i*3]   = (Math.random() - 0.5) * 10;
-      arr[i*3+1] = (Math.random() - 0.5) * 8;
-      arr[i*3+2] = (Math.random() - 0.5) * 6 - 2;
+      arr[i * 3] = (Math.random() - 0.5) * 10;
+      arr[i * 3 + 1] = (Math.random() - 0.5) * 8;
+      arr[i * 3 + 2] = (Math.random() - 0.5) * 6 - 2;
     }
     return arr;
   }, [count]);
@@ -160,9 +160,9 @@ const SceneInner = () => {
       ))}
 
       {/* Decorative rings */}
-      <SpinRing pos={[0, 0, 0]}   radius={1.3}  color={TEAL_LIGHT}  tiltX={Math.PI/4}  tiltZ={0.3} />
-      <SpinRing pos={[0, 0, 0]}   radius={2.1}  color={TEAL_MID}    tiltX={-Math.PI/6} tiltZ={0.8} />
-      <SpinRing pos={[2.2,1.1,-0.8]} radius={0.6} color={WHITE}   tiltX={Math.PI/3}  tiltZ={-0.4}/>
+      <SpinRing pos={[0, 0, 0]} radius={1.3} color={TEAL_LIGHT} tiltX={Math.PI / 4} tiltZ={0.3} />
+      <SpinRing pos={[0, 0, 0]} radius={2.1} color={TEAL_MID} tiltX={-Math.PI / 6} tiltZ={0.8} />
+      <SpinRing pos={[2.2, 1.1, -0.8]} radius={0.6} color={WHITE} tiltX={Math.PI / 3} tiltZ={-0.4} />
     </group>
   );
 };
