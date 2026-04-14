@@ -33,14 +33,18 @@ export const Navbar = () => {
           <motion.div
             initial={{ y: -20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            className="w-full bg-white/80 backdrop-blur-2xl border rounded-full px-4 h-16 md:h-20 shadow-[0_10px_50px_rgba(0,0,0,0.05)] border-gray-200 flex items-center justify-between"
+            className={`w-full transition-all duration-500 rounded-full px-4 h-16 md:h-20 flex items-center justify-between border ${
+              isScrolled 
+                ? "bg-white border-gray-200 shadow-[0_10px_30px_rgba(0,0,0,0.1)]" 
+                : "bg-white/20 backdrop-blur-xl border-white/30 shadow-[0_10px_50px_rgba(0,0,0,0.05)]"
+            }`}
           >
             {/* Left Section: Logo */}
             <div className="flex items-center gap-8">
               <Link to="/" className="group flex items-center ml-2">
                 <img
                   src="/logo.png"
-                  alt="Gyana Sarathi"
+                  alt="GyanSarathi"
                   className="h-10 md:h-12 w-auto object-contain transition-opacity duration-300 group-hover:opacity-80"
                 />
               </Link>

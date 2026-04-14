@@ -51,7 +51,7 @@ export const Footer = () => {
         {/* Left: Logo */}
         <div className="mb-16 lg:mb-0 lg:w-1/4">
           <Link to="/" className="inline-block">
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tighter text-white">GYAN SARATHI</h1>
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tighter text-white">GyanSarathi</h1>
           </Link>
         </div>
 

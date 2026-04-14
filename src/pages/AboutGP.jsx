@@ -6,9 +6,9 @@ import { Button } from '../components/ui/Button';
 
 export const AboutGP = () => {
   return (
-    <div className="w-full overflow-hidden bg-white">
+    <div className="w-full overflow-hidden bg-blue-100">
       {/* SECTION 1 — HERO */}
-      <section className="relative min-h-[60vh] flex flex-col justify-center px-6 pt-40 pb-24 bg-sapforce-bg overflow-hidden relative z-10 border-b border-black/5">
+      <section className="relative min-h-[60vh] flex flex-col justify-center px-6 pt-40 pb-24 bg-blue-100 overflow-hidden relative z-10 border-b border-black/5">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-black/[0.03] via-transparent to-transparent pointer-events-none"></div>
         <div className="container mx-auto max-w-5xl text-center relative z-10">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
@@ -141,10 +141,10 @@ export const AboutGP = () => {
       {/* SECTION 3 — THE PHILOSOPHY */}
       <section className="py-24 md:py-32 bg-sapforce-bg relative z-10 flex items-center justify-center">
         <div className="container mx-auto px-6 max-w-7xl">
-          <motion.div 
-            initial={{ opacity: 0, y: 30 }} 
-            whileInView={{ opacity: 1, y: 0 }} 
-            viewport={{ once: true }} 
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.8 }}
             className="rounded-[2.5rem] md:rounded-[3rem] p-10 md:p-20 text-center relative overflow-hidden shadow-xl flex flex-col items-center justify-center mx-auto"
             style={{ background: "linear-gradient(to bottom right, #ffffff, #92d5d8, #052e23)" }}
@@ -242,13 +242,13 @@ const FeatureCard = ({ icon, title, desc, delay }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6, delay }}
-      className="bg-[#F7F8F9] border border-black/[0.03] p-10 rounded-[2.5rem] group relative overflow-hidden transition-all duration-500 hover:bg-sapforce-bg hover:-translate-y-1 shadow-sm hover:shadow-md cursor-pointer flex flex-col h-full"
+      className="bg-gradient-to-br from-white via-[#92d5d8] to-[#052e23]  p-10 rounded-[2.5rem] group relative overflow-hidden transition-all duration-500 hover:-translate-y-1 shadow-md hover:shadow-xl cursor-pointer flex flex-col h-full"
     >
-      <div className="mb-8 w-14 h-14 rounded-full bg-white flex items-center justify-center shadow-sm group-hover:bg-sapforce-accent group-hover:text-black transition-colors duration-500 border border-black/5 text-gray-500">
+      <div className="mb-8 w-14 h-14 rounded-full bg-black flex items-center justify-center shadow-sm group-hover:scale-110 transition-colors duration-500 border border-white/10 text-white">
         {React.cloneElement(icon, { className: "transition-colors" })}
       </div>
       <h3 className="text-xl font-bold mb-4 tracking-tight text-black leading-tight">{title}</h3>
-      <p className="text-gray-500 font-medium leading-relaxed flex-grow">{desc}</p>
+      <p className="text-black/70 font-medium leading-relaxed flex-grow">{desc}</p>
     </motion.div>
   );
 };

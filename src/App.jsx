@@ -39,7 +39,7 @@ function App() {
   return (
     <Router>
       <ScrollLayout>
-        <div className="min-h-screen flex flex-col relative font-sans text-black bg-white">
+        <div className="min-h-screen flex flex-col relative font-sans text-black bg-blue-100">
           <Navbar />
           <main className="flex pt-24">
             <Routes>
