@@ -19,9 +19,9 @@ const OP = 'M 252,0 A 252,91 0 1,1 -252,0 A 252,91 0 1,1 252,0';
 const OP_OUTER = 'M 285,0 A 285,104 0 1,1 -285,0 A 285,104 0 1,1 285,0';
 
 const BADGES = [
-  { label: 'AI Analytics', sub: 'Real-time insights', color: '#3B82F6', pos: { top: '25%', right: '20%' }, delay: 0 },
-  { label: 'Global Markets', sub: '160+ countries', color: '#06B6D4', pos: { top: '58%', left: '25%' }, delay: 0.6 },
-  { label: '$2.5B+ Deployed', sub: 'Capital optimized', color: '#8B5CF6', pos: { bottom: '10%', right: '25%' }, delay: 1.2 },
+  { label: 'AI Analytics', sub: 'Real-time insights', color: '#3B82F6', posClasses: 'top-[10%] right-[2%] md:top-[25%] md:right-[20%]', delay: 0 },
+  { label: 'Global Markets', sub: '160+ countries', color: '#06B6D4', posClasses: 'top-[42%] left-[2%] md:top-[58%] md:left-[25%]', delay: 0.6 },
+  { label: '$2.5B+ Deployed', sub: 'Capital optimized', color: '#8B5CF6', posClasses: 'bottom-[2%] right-[2%] md:bottom-[10%] md:right-[25%]', delay: 1.2 },
 ];
 
 export const AtomOrbital = ({ className = '' }) => (
@@ -281,11 +281,11 @@ export const AtomOrbital = ({ className = '' }) => (
     {BADGES.map((b) => (
       <motion.div
         key={b.label}
+        className={`absolute ${b.posClasses}`}
         animate={{ y: [0, -11, 0] }}
         transition={{ duration: 3.8, repeat: Infinity, ease: 'easeInOut', delay: b.delay }}
         style={{
-          position: 'absolute',
-          ...b.pos,
+
           display: 'flex',
           alignItems: 'center',
           gap: 12,
