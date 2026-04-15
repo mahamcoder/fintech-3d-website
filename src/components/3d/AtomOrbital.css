@@ -1,0 +1,280 @@
+/* ═══════════════════════════════════════════════════════════════
+   AtomOrbital — Premium CSS 3D Atom
+   Zero WebGL · Zero JS loop · Instant render · GPU composited
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── ROOT ────────────────────────────────────────────────────── */
+.atom-root {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+  perspective-origin: 50% 48%;
+  overflow: visible;
+}
+
+/* ── AMBIENT BACKGROUND GLOW ─────────────────────────────────── */
+.atom-bg-glow {
+  position: absolute;
+  width: 480px;
+  height: 480px;
+  border-radius: 50%;
+  background: radial-gradient(circle,
+    rgba(0, 212, 255, 0.10) 0%,
+    rgba(77, 185, 220, 0.06) 40%,
+    transparent 70%
+  );
+  pointer-events: none;
+  animation: bg-breathe 5s ease-in-out infinite;
+}
+
+@keyframes bg-breathe {
+  0%, 100% { transform: scale(1);    opacity: 0.7; }
+  50%       { transform: scale(1.12); opacity: 1; }
+}
+
+/* ── SCENE WRAPPER — keeps 3D context ────────────────────────── */
+.atom-scene {
+  position: relative;
+  width: 420px;
+  height: 420px;
+  transform-style: preserve-3d;
+  animation: scene-float 6s ease-in-out infinite;
+}
+
+@keyframes scene-float {
+  0%, 100% { transform: translateY(0px);  }
+  50%       { transform: translateY(-14px); }
+}
+
+/* ── NUCLEUS ─────────────────────────────────────────────────── */
+.nucleus {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  /* Multi-stop gradient for photo-real sphere */
+  background:
+    radial-gradient(circle at 32% 28%,
+      #ffffff 0%,
+      #7fe8f8 12%,
+      #00C8EE 28%,
+      #0ea5c9 55%,
+      #0369a1 80%,
+      #0c4a6e 100%
+    );
+  box-shadow:
+    0 0 0 1px rgba(0,200,238,0.3),
+    0 0 30px rgba(0,200,238,0.45),
+    0 0 70px rgba(0,200,238,0.18),
+    inset 0 -8px 24px rgba(0,0,0,0.25);
+  z-index: 10;
+}
+
+/* Primary specular highlight */
+.nucleus-shine {
+  position: absolute;
+  top: 11%; left: 18%;
+  width: 30%; height: 20%;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.70);
+  filter: blur(5px);
+  pointer-events: none;
+}
+
+/* Secondary softer highlight */
+.nucleus-shine-2 {
+  position: absolute;
+  top: 8%; left: 55%;
+  width: 14%; height: 10%;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.45);
+  filter: blur(3px);
+  pointer-events: none;
+}
+
+/* Pulsing rim glow */
+.nucleus-pulse {
+  position: absolute;
+  inset: -28px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0,200,238,0.22) 0%, transparent 70%);
+  animation: nucleus-pulse 3s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes nucleus-pulse {
+  0%, 100% { transform: scale(1);   opacity: 0.6; }
+  50%       { transform: scale(1.2); opacity: 1;   }
+}
+
+/* ── ORBITAL RINGS ────────────────────────────────────────────── */
+.ring {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+}
+
+.ring-track {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 1.8px solid rgba(0, 212, 255, 0.50);
+  box-shadow:
+    0 0 8px rgba(0,212,255,0.20),
+    inset 0 0 8px rgba(0,212,255,0.05);
+}
+
+/* Ring 1 — equatorial, fast */
+.ring-1 {
+  transform: rotateX(72deg) rotateZ(0deg);
+  animation: ring-spin-1 7s linear infinite;
+}
+
+/* Ring 2 — tilted 60°, medium */
+.ring-2 {
+  transform: rotateX(72deg) rotateZ(58deg);
+  animation: ring-spin-2 11s linear infinite reverse;
+}
+
+/* Ring 3 — tilted -45°, slow */
+.ring-3 {
+  transform: rotateX(72deg) rotateZ(-48deg);
+  animation: ring-spin-3 15s linear infinite;
+}
+
+@keyframes ring-spin-1 {
+  from { transform: rotateX(72deg) rotateZ(0deg)   rotateY(0deg);   }
+  to   { transform: rotateX(72deg) rotateZ(0deg)   rotateY(360deg); }
+}
+@keyframes ring-spin-2 {
+  from { transform: rotateX(72deg) rotateZ(58deg)  rotateY(0deg);   }
+  to   { transform: rotateX(72deg) rotateZ(58deg)  rotateY(360deg); }
+}
+@keyframes ring-spin-3 {
+  from { transform: rotateX(72deg) rotateZ(-48deg) rotateY(0deg);   }
+  to   { transform: rotateX(72deg) rotateZ(-48deg) rotateY(360deg); }
+}
+
+/* ── SATELLITES ───────────────────────────────────────────────── */
+.satellite {
+  position: absolute;
+  top: 50%; left: 50%;
+  border-radius: 50%;
+  /* Orbital motion trick: rotate → translate out → counter-rotate */
+}
+
+/* Sizes */
+.sat-xl  { width: 40px; height: 40px; margin: -20px 0 0 -20px; }
+.sat-lg  { width: 30px; height: 30px; margin: -15px 0 0 -15px; }
+.sat-md  { width: 24px; height: 24px; margin: -12px 0 0 -12px; }
+.sat-sm  { width: 16px; height: 16px; margin:  -8px 0 0  -8px; }
+
+/* Color variants — bright & vibrant */
+.sat-cyan {
+  background: radial-gradient(circle at 32% 28%,
+    #ffffff 0%, #7fe8f8 15%, #00C8EE 40%, #0ea5c9 70%, #075985 100%);
+  box-shadow: 0 0 14px rgba(0,200,238,0.6), 0 0 30px rgba(0,200,238,0.2);
+}
+
+.sat-deep {
+  background: radial-gradient(circle at 32% 28%,
+    #e0f7ff 0%, #5cc8e8 20%, #1e8fb4 50%, #0a5f80 80%, #063c54 100%);
+  box-shadow: 0 0 14px rgba(30,143,180,0.6), 0 0 28px rgba(30,143,180,0.2);
+}
+
+.sat-mid {
+  background: radial-gradient(circle at 32% 28%,
+    #cceeff 0%, #88d8f0 20%, #38bdf8 50%, #0284c7 80%, #0c4a6e 100%);
+  box-shadow: 0 0 12px rgba(56,189,248,0.5);
+}
+
+.sat-grey {
+  background: radial-gradient(circle at 32% 28%,
+    #f8fafc 0%, #cbd5e1 25%, #94a3b8 55%, #64748b 85%);
+  box-shadow: 0 0 8px rgba(148,163,184,0.4);
+}
+
+/* Orbit animations per ring/satellite */
+.orbit-a        { animation: orbit 7s  linear infinite; }
+.orbit-a-offset { animation: orbit 7s  linear infinite; animation-delay: -3.5s; }
+.orbit-b        { animation: orbit 11s linear infinite reverse; }
+.orbit-b-offset { animation: orbit 11s linear infinite reverse; animation-delay: -5.5s; }
+.orbit-c        { animation: orbit 15s linear infinite; }
+.orbit-c-offset { animation: orbit 15s linear infinite; animation-delay: -7.5s; }
+
+@keyframes orbit {
+  0%   { transform: rotate(0deg)   translateX(205px) rotate(0deg); }
+  100% { transform: rotate(360deg) translateX(205px) rotate(-360deg); }
+}
+
+/* ── FLOATING BADGES ──────────────────────────────────────────── */
+.atom-badge {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.9);
+  box-shadow:
+    0 4px 24px rgba(0,0,0,0.08),
+    0 1px 3px rgba(0,0,0,0.05);
+  pointer-events: none;
+  z-index: 30;
+  white-space: nowrap;
+}
+
+.atom-badge-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.atom-badge-label {
+  font-size: 11px;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.atom-badge-sub {
+  font-size: 9px;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0;
+}
+
+/* ── RESPONSIVE ───────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .atom-scene    { width: 280px; height: 280px; }
+  .atom-bg-glow  { width: 300px; height: 300px; }
+  .nucleus       { width: 72px;  height: 72px;  }
+
+  .sat-xl  { width: 26px; height: 26px; margin: -13px 0 0 -13px; }
+  .sat-lg  { width: 20px; height: 20px; margin: -10px 0 0 -10px; }
+  .sat-md  { width: 16px; height: 16px; margin:  -8px 0 0  -8px; }
+  .sat-sm  { width: 11px; height: 11px; margin:  -5px 0 0  -5px; }
+
+  @keyframes orbit {
+    0%   { transform: rotate(0deg)   translateX(138px) rotate(0deg); }
+    100% { transform: rotate(360deg) translateX(138px) rotate(-360deg); }
+  }
+
+  .atom-badge { padding: 7px 12px; gap: 7px; }
+  .atom-badge-label { font-size: 10px; }
+  .atom-badge-sub   { font-size: 8px; }
+}

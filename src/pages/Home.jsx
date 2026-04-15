@@ -6,11 +6,10 @@ import {
   Cpu, Activity, Globe, Box, Network, Quote, Star
 } from 'lucide-react';
 import { Button } from '../components/ui/Button';
-import { HeroScene } from '../components/3d/HeroScene';
+import { AtomOrbital } from '../components/3d/AtomOrbital';
 import Ai from '../assets/image.png';
 import video1 from '../assets/video1.mp4';
 import video2 from '../assets/video2.mp4';
-import hero from '../assets/hero.gif'
 
 export const Home = () => {
   const tickerItems = [
@@ -68,53 +67,9 @@ export const Home = () => {
         {/* CENTERED AREA: BLOB & FLOATING TAGS */}
         <div className="relative w-full flex-1 flex flex-col items-center justify-center pt-12 md:pt-20">
 
-          {/* THE HERO IMAGE (WITH FLOATING LABELS) */}
-          <div className="relative z-20 w-full h-[350px] md:h-[550px] flex items-center justify-center">
-
-            {/* Asset Container */}
-            <div className="relative -mt-10 pointer-events-none">
-
-              <img src={hero} alt="Hero Asset" className="h-[300px] md:h-[500px] w-auto object-contain transform scale-150 md:scale-170" />
-              {/* <TransparentImage
-
-                src={hero}
-                alt="Hero Asset"
-                className="h-[300px] md:h-[500px] w-auto object-contain transform scale-125 md:scale-150"
-                tolerance={230}
-              /> */}
-
-              {/* FLOATING TAG 1: CollaborationTool */}
-              <motion.div
-                {...bounceAnim}
-                className="absolute top-1/4 -right-10 md:right-3 bg-white shadow-2xl rounded-xl p-2 px-4 flex items-center gap-3 border border-gray-100/50 backdrop-blur-md pointer-events-auto"
-              >
-                <div className="w-3 h-3 rounded-full bg-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.8)]"></div>
-                <span className="text-[10px] md:text-xs font-bold text-gray-800">CollaborationTool</span>
-              </motion.div>
-
-              {/* FLOATING TAG 2: CloudStorageHub */}
-              <motion.div
-                {...floatAnim}
-                transition={{ duration: 5, repeat: Infinity }}
-                className="absolute bottom-1/4 -left-10 md:left-13 bg-white shadow-2xl rounded-xl p-2 px-4 flex items-center gap-3 border border-gray-100/50 backdrop-blur-md pointer-events-auto"
-              >
-                <div className="w-3 h-3 rounded-full bg-cyan-400 shadow-[0_0_10px_rgba(34,211,238,0.8)]"></div>
-                <span className="text-[10px] md:text-xs font-bold text-gray-800">CloudStorageHub</span>
-              </motion.div>
-
-              {/* FLOATING TAG 3: 65 Downloads (Larger) */}
-              <motion.div
-                {...bounceAnim}
-                transition={{ delay: 0.5, duration: 3, repeat: Infinity }}
-                className="absolute bottom-[20%] right-[-5%] md:right-[5%] bg-white shadow-2xl rounded-2xl p-2 px-4 flex flex-col gap-1 border border-gray-100/50 backdrop-blur-md pointer-events-auto min-w-[150px]"
-              >
-                <div className="flex items-center justify-between gap-4">
-                  <span className="text-sm md:text-sm font-bold text-gray-800">65 Downloads</span>
-                  <div className="w-2.5 h-2.5 rounded-full bg-purple-500"></div>
-                </div>
-
-              </motion.div>
-            </div>
+          {/* ── HERO: SVG ATOM ORBITAL ── */}
+          <div className="relative z-20 w-full h-[440px] md:h-[620px]" style={{ overflow: 'visible' }}>
+            <AtomOrbital className="absolute inset-0" />
           </div>
 
           {/* BOTTOM LEFT: DESCRIPTION & PILL BUTTONS */}
@@ -382,7 +337,7 @@ export const Home = () => {
 
       {/* SECTION 3: STRATEGIC ADVANTAGE (REDESIGNED CARD) */}
       <section className="py-20 relative">
-       
+
 
         <div className="container mx-auto px-6 max-w-7xl relative">
           <div
