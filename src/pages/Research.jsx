@@ -9,9 +9,9 @@ import { Button } from '../components/ui/Button';
 
 export const Research = () => {
   return (
-    <div className="w-full overflow-hidden bg-blue-100">
+    <div className="w-full overflow-hidden bg-blue-50/20">
       {/* SECTION 1 — HERO */}
-      <section className="relative min-h-[60vh] flex flex-col justify-center px-6 pt-40 pb-24 bg-blue-100 overflow-hidden relative z-10 border-b border-black/5">
+      <section className="relative min-h-[60vh] flex flex-col justify-center px-6 pt-40 pb-24 bg-blue-50/20 overflow-hidden relative z-10 border-b border-black/5">
         {/* Subtle Data Grids / Charts */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-black/[0.04] via-transparent to-transparent pointer-events-none"></div>
         <div className="absolute inset-x-0 bottom-0 h-[60%] opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'linear-gradient(0deg, black 1px, transparent 1px), linear-gradient(90deg, black 1px, transparent 1px)', backgroundSize: '40px 40px', backgroundPosition: 'center bottom' }}></div>
@@ -49,10 +49,10 @@ export const Research = () => {
               This is not a general editorial feed. It is a structured knowledge system containing institutional-grade decision frameworks, precision macro intelligence, and high-value internal analytics. It is designed securely for serious investors, architects, and allocators.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center max-w-4xl mx-auto">
-               <div className="bg-gradient-to-br from-white via-[#92d5d8] to-[#052e23] p-4 rounded-xl text-sm font-semibold text-gray-800">Structured Financial Research</div>
-               <div className="bg-gradient-to-br from-white via-[#92d5d8] to-[#052e23] p-4 rounded-xl text-sm font-semibold text-gray-800">Decision Frameworks</div>
-               <div className="bg-gradient-to-br from-white via-[#92d5d8] to-[#052e23] p-4 rounded-xl text-sm font-semibold text-gray-800">Macro Market Intelligence</div>
-               <div className="bg-gradient-to-br from-white via-[#92d5d8] to-[#052e23] p-4 rounded-xl text-sm font-semibold text-gray-800">Institutional Insights</div>
+               <div className="bg-gradient-to-br from-white via-[#92d5d8] to-[#4db9dc] p-4 rounded-xl text-sm font-semibold text-gray-800">Structured Financial Research</div>
+               <div className="bg-gradient-to-br from-white via-[#92d5d8] to-[#4db9dc] p-4 rounded-xl text-sm font-semibold text-gray-800">Decision Frameworks</div>
+               <div className="bg-gradient-to-br from-white via-[#92d5d8] to-[#4db9dc] p-4 rounded-xl text-sm font-semibold text-gray-800">Macro Market Intelligence</div>
+               <div className="bg-gradient-to-br from-white via-[#92d5d8] to-[#4db9dc] p-4 rounded-xl text-sm font-semibold text-gray-800">Institutional Insights</div>
             </div>
           </motion.div>
         </div>
@@ -111,7 +111,7 @@ export const Research = () => {
             {/* Left Box - Macro Market Reports */}
             <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
                <div className="mb-10">
-                 <div className="w-12 h-12 rounded-full bg-[#111] flex items-center justify-center text-[#59918F] mb-6 shadow-md"><LineChart size={20}/></div>
+                 <div className="w-12 h-12 rounded-full bg-sapforce-dark flex items-center justify-center text-sapforce-accent mb-6 shadow-md"><LineChart size={20}/></div>
                  <h2 className="text-2xl md:text-[2.25rem] font-medium tracking-tighter text-black leading-none mb-4">Macro Market Intelligence</h2>
                  <p className="text-gray-500 font-medium text-lg leading-relaxed max-w-md">Institutional-grade coverage delivering Wall Street research desk output.</p>
                </div>
@@ -142,7 +142,7 @@ export const Research = () => {
 
             {/* Right Box - The Crossroads of AI & Finance */}
             <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="h-full">
-               <div className="h-full bg-gradient-to-br from-[#052e23] to-[#111] rounded-[3rem] p-10 md:p-14 relative overflow-hidden text-white shadow-2xl flex flex-col justify-between border border-white/5">
+               <div className="h-full bg-sapforce-dark rounded-[3rem] p-10 md:p-14 relative overflow-hidden text-white shadow-2xl flex flex-col justify-between border border-white/5">
                   <div className="absolute top-0 right-0 w-64 h-64 bg-[#92d5d8] blur-[100px] opacity-20 pointer-events-none"></div>
                   
                   <div className="relative z-10 mb-12">
@@ -160,7 +160,7 @@ export const Research = () => {
                        "The fundamental future of institutional intelligence"
                      ].map((insight, idx) => (
                        <div key={idx} className="flex gap-4 p-4 hover:bg-white/5 rounded-xl transition-colors cursor-pointer group border-b border-white/5 last:border-0">
-                          <Cpu size={18} className="text-[#92d5d8] shrink-0 mt-1 opacity-80" />
+                          <Cpu size={18} className="text-sapforce-accent shrink-0 mt-1 opacity-80" />
                           <span className="font-semibold text-gray-200 text-lg group-hover:text-white leading-tight">{insight}</span>
                        </div>
                      ))}
@@ -218,7 +218,7 @@ export const Research = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
             className="rounded-[2.5rem]  p-10 md:p-20 text-center relative overflow-hidden shadow-2xl"
-            style={{ background: "linear-gradient(to bottom right, #ffffff, #92d5d8, #052e23)" }}
+            style={{ background: "linear-gradient(to bottom right, #ffffff, #92d5d8, #4db9dc)" }}
           >
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-100/50 via-transparent to-transparent"></div>
             <div className="relative z-10 max-w-4xl mx-auto">
@@ -248,7 +248,7 @@ export const Research = () => {
 const VaultCard = ({ title, desc, icon }) => (
   <motion.div 
     initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}
-    className="bg-gradient-to-br from-white via-[#92d5d8] to-[#052e23]  p-8 rounded-3xl group relative overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full shadow-md"
+    className="bg-gradient-to-br from-white via-[#92d5d8] to-[#4db9dc]  p-8 rounded-3xl group relative overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full shadow-md"
   >
     <div className="flex items-start justify-between mb-6">
        <div className="w-12 h-12 rounded-full bg-black flex items-center justify-center text-white group-hover:scale-110 transition-colors border border-white/10">
@@ -268,7 +268,7 @@ const VaultCard = ({ title, desc, icon }) => (
 const InsightCard = ({ tag, title, desc }) => (
   <motion.div 
     initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}
-    className="bg-gradient-to-br from-white via-[#92d5d8] to-[#052e23]  p-10 rounded-[2.5rem] group relative overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full shadow-md"
+    className="bg-gradient-to-br from-white via-[#92d5d8] to-[#4db9dc]  p-10 rounded-[2.5rem] group relative overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full shadow-md"
   >
     <div className="text-[10px] font-black uppercase text-black/50 tracking-widest mb-4">{tag}</div>
     <h3 className="text-2xl font-bold mb-4 tracking-tight text-black leading-tight flex-grow">{title}</h3>

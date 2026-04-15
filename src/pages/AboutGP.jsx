@@ -6,9 +6,9 @@ import { Button } from '../components/ui/Button';
 
 export const AboutGP = () => {
   return (
-    <div className="w-full overflow-hidden bg-blue-100">
+    <div className="w-full overflow-hidden bg-blue-50/20">
       {/* SECTION 1 — HERO */}
-      <section className="relative min-h-[60vh] flex flex-col justify-center px-6 pt-40 pb-24 bg-blue-100 overflow-hidden relative z-10 border-b border-black/5">
+      <section className="relative min-h-[60vh] flex flex-col justify-center px-6 pt-40 pb-24 bg-blue-50/20 overflow-hidden relative z-10 border-b border-black/5">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-black/[0.03] via-transparent to-transparent pointer-events-none"></div>
         <div className="container mx-auto max-w-5xl text-center relative z-10">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
@@ -75,7 +75,7 @@ export const AboutGP = () => {
                   initial={{ y: 20, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{ delay: 0.3, duration: 0.8 }}
                   className="hidden md:flex self-end bg-white rounded-2xl p-4 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-black/5 items-center gap-4 absolute -right-8 -top-8 z-20"
                 >
-                  <div className="w-12 h-12 rounded-full bg-[#111] flex items-center justify-center text-[#59918F]">
+                  <div className="w-12 h-12 rounded-full bg-sapforce-dark flex items-center justify-center text-sapforce-accent">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M3 3v18h18" /><path d="M18 9l-5-5-6 6-4-4" /></svg>
                   </div>
                   <div className="pr-2">
@@ -94,7 +94,7 @@ export const AboutGP = () => {
                       <div className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1.5">Portfolio Growth</div>
                       <div className="text-4xl font-medium tracking-tighter text-black leading-none">$14.2M</div>
                     </div>
-                    <div className="px-2.5 py-1 rounded-full bg-[#59918F]/20 text-[#8aa331] text-[10px] font-bold">YTD</div>
+                    <div className="px-2.5 py-1 rounded-full bg-sapforce-accent/20 text-sapforce-accent text-[10px] font-bold">YTD</div>
                   </div>
 
                   {/* Bar & Line SVG Combination */}
@@ -120,14 +120,14 @@ export const AboutGP = () => {
                       {/* Curved Line */}
                       <path
                         d="M0,140 C40,90 80,150 120,85 C160,20 200,95 240,65 C280,35 320,85 360,25 C380,5 400,10 400,10"
-                        fill="none" stroke="#111" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"
+                        fill="none" stroke="#0a1a1f" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"
                       />
 
                       {/* Data Dots */}
-                      <circle cx="120" cy="85" r="5" fill="#59918F" stroke="#fff" strokeWidth="2" className="drop-shadow-sm" />
-                      <circle cx="240" cy="65" r="5" fill="#59918F" stroke="#fff" strokeWidth="2" className="drop-shadow-sm" />
-                      <circle cx="360" cy="25" r="7" fill="#111" />
-                      <circle cx="360" cy="25" r="3" fill="#59918F" />
+                      <circle cx="120" cy="85" r="5" fill="#5fa8d3" stroke="#fff" strokeWidth="2" className="drop-shadow-sm" />
+                      <circle cx="240" cy="65" r="5" fill="#5fa8d3" stroke="#fff" strokeWidth="2" className="drop-shadow-sm" />
+                      <circle cx="360" cy="25" r="7" fill="#0a1a1f" />
+                      <circle cx="360" cy="25" r="3" fill="#5fa8d3" />
                     </svg>
                   </div>
                 </motion.div>
@@ -147,7 +147,7 @@ export const AboutGP = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
             className="rounded-[2.5rem] md:rounded-[3rem] p-10 md:p-20 text-center relative overflow-hidden shadow-xl flex flex-col items-center justify-center mx-auto"
-            style={{ background: "linear-gradient(to bottom right, #ffffff, #92d5d8, #052e23)" }}
+            style={{ background: "linear-gradient(to bottom right, #ffffff, #92d5d8, #4db9dc)" }}
           >
             <div className="relative z-10 max-w-4xl mx-auto">
               <span className="text-[10px] font-black text-gray-500 uppercase tracking-[0.3em] mb-6 inline-block">The Philosophy</span>
@@ -211,7 +211,7 @@ export const AboutGP = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
             className="rounded-[2.5rem] p-10 md:p-20 text-center relative overflow-hidden backdrop-blur-3xl shadow-xl"
-            style={{ background: "linear-gradient(to bottom right, #ffffff, #92d5d8, #052e23)" }}
+            style={{ background: "linear-gradient(to bottom right, #ffffff, #92d5d8, #4db9dc)" }}
           >
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-sapforce-accent/10 via-transparent to-transparent opacity-60"></div>
             <div className="relative z-10 max-w-3xl mx-auto">
@@ -242,7 +242,7 @@ const FeatureCard = ({ icon, title, desc, delay }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6, delay }}
-      className="bg-gradient-to-br from-white via-[#92d5d8] to-[#052e23]  p-10 rounded-[2.5rem] group relative overflow-hidden transition-all duration-500 hover:-translate-y-1 shadow-md hover:shadow-xl cursor-pointer flex flex-col h-full"
+      className="bg-gradient-to-br from-white via-[#92d5d8] to-[#4db9dc]  p-10 rounded-[2.5rem] group relative overflow-hidden transition-all duration-500 hover:-translate-y-1 shadow-md hover:shadow-xl cursor-pointer flex flex-col h-full"
     >
       <div className="mb-8 w-14 h-14 rounded-full bg-black flex items-center justify-center shadow-sm group-hover:scale-110 transition-colors duration-500 border border-white/10 text-white">
         {React.cloneElement(icon, { className: "transition-colors" })}

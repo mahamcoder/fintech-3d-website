@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export const Footer = () => {
   return (
-    <footer className="relative bg-[#052e23] text-white overflow-hidden pt-32 pb-12 font-sans w-full rounded-t-[3rem] md:rounded-t-[4.5rem]">
+    <footer className="relative bg-sapforce-dark text-white overflow-hidden pt-32 pb-12 font-sans w-full rounded-t-[3rem] md:rounded-t-[4.5rem]">
 
       {/* Smooth Edge Fade from Above Section */}
       <div className="absolute top-0 left-0 w-full h-24 md:h-32 bg-gradient-to-b from-gray-100/80 via-transparent to-transparent pointer-events-none z-10"></div>
@@ -12,7 +12,7 @@ export const Footer = () => {
       <div
         className="absolute top-0 left-1/2 -translate-x-1/2 w-[250%] md:w-[150%] h-[1200px] z-0 pointer-events-none"
         style={{
-          background: 'radial-gradient(circle at 50% 15%, #ffffff 0%, #ffffff 25%, #92d5d8 45%, #052e23 70%, transparent 100%)',
+          background: 'radial-gradient(circle at 50% 15%, #ffffff 0%, #ffffff 25%, #4db9dc 45%, #0a1a1f 70%, transparent 100%)',
           transform: 'translateY(-15%)'
         }}
       ></div>
@@ -96,10 +96,10 @@ export const Footer = () => {
             <div className="flex flex-col gap-4">
               <h4 className="text-white text-[13px] font-bold tracking-wide">Contacts</h4>
               <div className="flex flex-col gap-3">
-                <a href="mailto:hello@sapforceai.com" className="text-[#8FBDAE] text-[10px] font-bold hover:text-white uppercase tracking-[0.1em]">
+                <a href="mailto:hello@sapforceai.com" className="text-sapforce-accent text-[10px] font-bold hover:text-white uppercase tracking-[0.1em]">
                   HELLO@SAPFORCEAI.COM
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-[#8FBDAE] hover:text-white group">
+                <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-sapforce-accent hover:text-white group">
                   <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" /></svg>
                   <span className="text-[10px] font-bold uppercase tracking-[0.1em]">LINKEDIN</span>
                 </a>
@@ -113,7 +113,7 @@ export const Footer = () => {
 
       {/* FOOTER BOTTOM DIVIDER */}
       <div className="container mx-auto px-6 lg:px-12 max-w-[1400px] relative z-10 w-full mt-24">
-        <div className="w-full h-[1px] bg-gradient-to-r from-blue-900/30 via-emerald-400/30 to-[#052e23] border-none"></div>
+        <div className="w-full h-[1px] bg-gradient-to-r from-blue-900/30 via-cyan-400/30 to-sapforce-dark border-none"></div>
       </div>
     </footer>
   );

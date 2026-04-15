@@ -73,6 +73,7 @@ export const Home = () => {
 
             {/* Asset Container */}
             <div className="relative -mt-10 pointer-events-none">
+
               <img src={hero} alt="Hero Asset" className="h-[300px] md:h-[500px] w-auto object-contain transform scale-150 md:scale-170" />
               {/* <TransparentImage
 
@@ -247,8 +248,8 @@ export const Home = () => {
 
 
       {/* SECTION 2: MISSION & 3-CARD STATS */}
-      <section className="py-20 md:py-32 bg-gray-100 relative z-10 flex justify-center">
-        <div className="bg-gradient-to-br from-white via-[#92d5d8] to-[#052e23] rounded-[2.5rem] md:rounded-[3rem] p-8 md:p-14 w-full max-w-[1150px] mx-6 shadow-xl shadow-black/5 ">
+      <section className="py-20 md:py-32 bg-white/60 relative z-10 flex justify-center">
+        <div className="bg-gradient-to-br from-white via-[#92d5d8] to-[#4db9dc] rounded-[2.5rem] md:rounded-[3rem] p-8 md:p-14 w-full max-w-[1150px] mx-6 shadow-xl shadow-black/5 ">
 
           {/* Header Area */}
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-8">
@@ -321,7 +322,7 @@ export const Home = () => {
             </div>
 
             {/* Column 3: Dark Card */}
-            <div className="bg-[#1A1A1A] rounded-[2rem] p-8 flex flex-col justify-between text-white relative overflow-hidden min-h-[300px] shadow-xl">
+            <div className="bg-sapforce-dark rounded-[2rem] p-8 flex flex-col justify-between text-white relative overflow-hidden min-h-[300px] shadow-xl">
               {/* Background Arrow SVG Overlay */}
               <svg width="240" height="240" viewBox="0 0 200 200" className="absolute bottom-4 -right-2 opacity-[0.05] pointer-events-none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M 10 160 Q 50 160 100 100 T 170 30" stroke="white" strokeWidth="20" fill="none" strokeLinecap="round" />
@@ -368,7 +369,7 @@ export const Home = () => {
                     className="flex items-center gap-8 px-8 text-black font-black text-2xl md:text-5xl tracking-tighter uppercase transition-all"
                   >
                     <span>{text}</span>
-                    <div className="w-10 h-10 md:w-14 md:h-14 rounded-full bg-sapforce-accent flex items-center justify-center text-white group-hover:bg-black transition-colors duration-500">
+                    <div className="w-10 h-10 md:w-14 md:h-14 rounded-full bg-gradient-to-br from-white via-[#92d5d8] to-[#4db9dc] flex items-center justify-center text-white group-hover:bg-black transition-colors duration-500">
                       <ArrowRight className="-rotate-45" size={24} strokeWidth={3} />
                     </div>
                   </div>
@@ -380,16 +381,15 @@ export const Home = () => {
       </section>
 
       {/* SECTION 3: STRATEGIC ADVANTAGE (REDESIGNED CARD) */}
-      <section className="py-20 animate-fade-in">
-        <div className="container mx-auto px-6 max-w-7xl">
+      <section className="py-20 relative">
+       
+
+        <div className="container mx-auto px-6 max-w-7xl relative">
           <div
-            className="rounded-[3.5rem] p-12 md:p-24 relative overflow-hidden shadow-2xl shadow-black/10 transition-all duration-700 hover:shadow-sapforce-accent/20"
-            style={{
-              background: "linear-gradient(135deg, #052e23 0%, #59918F 50%, #92d5d8 100%)"
-            }}
+            className="bg-white/80 rounded-[3.5rem] p-12 md:p-24 relative overflow-hidden shadow-2xl shadow-black/5"
           >
             {/* Background Decorative Element */}
-            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-white opacity-[0.03] rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl pointer-events-none"></div>
+            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-sapforce-accent/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl pointer-events-none"></div>
 
             <div className="relative z-10">
               <div className="text-center max-w-3xl mx-auto mb-20">
@@ -398,23 +398,23 @@ export const Home = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                 >
-                  <span className="text-[10px] font-black text-white bg-white/10 px-4 py-2 rounded-full uppercase tracking-[0.3em] mb-8 inline-block">The ROI Architect</span>
-                  <h3 className="text-4xl md:text-6xl font-black text-white mb-6 leading-tight tracking-tighter">
+                  <span className="text-[10px] font-black text-sapforce-accent bg-sapforce-accent/10 px-4 py-2 rounded-full uppercase tracking-[0.3em] mb-8 inline-block">The ROI Architect</span>
+                  <h2 className="text-4xl md:text-6xl font-medium text-black mb-6 leading-tight tracking-tighter">
                     The Strategic Advantage
-                  </h3>
-                  <p className="text-lg md:text-xl text-white/70 font-sans font-light max-w-2xl mx-auto leading-relaxed">
+                  </h2>
+                  <p className="text-lg md:text-xl text-gray-500 font-sans font-light max-w-2xl mx-auto leading-relaxed">
                     Deep financial analytics fused with custom AI models to accelerate high-stakes decisions.
                   </p>
                 </motion.div>
               </div>
 
               <div className="relative flex flex-col md:flex-row items-center md:items-start justify-between gap-12 md:gap-0 mt-12">
-                <div className="hidden md:block absolute top-[2.5rem] left-[10%] right-[10%] h-px bg-white/10 z-0"></div>
+                <div className="hidden md:block absolute top-[2.5rem] left-[10%] right-[10%] h-px bg-black z-0"></div>
 
-                <ProcessNode step="1" title="Data Acquisition" desc="Collect multi-industry financial and macroeconomic data." delay={0.1} icon={<Database size={22} />} isDark={true} />
-                <ProcessNode step="2" title="Advanced Analytics" desc="Run valuation models and risk diagnostics." delay={0.2} icon={<Activity size={22} />} isDark={true} />
-                <ProcessNode step="3" title="Custom AI Processing" desc="Apply bespoke LLMs and automation agents." delay={0.3} icon={<Network size={22} />} isDark={true} />
-                <ProcessNode step="4" title="Strategic Output" desc="Deliver actionable insights and optimized investment decisions." delay={0.4} icon={<Box size={22} />} isDark={true} />
+                <ProcessNode step="1" title="Data Acquisition" desc="Collect multi-industry financial and macroeconomic data." delay={0.1} icon={<Database size={22} />} isDark={false} />
+                <ProcessNode step="2" title="Advanced Analytics" desc="Run valuation models and risk diagnostics." delay={0.2} icon={<Activity size={22} />} isDark={false} />
+                <ProcessNode step="3" title="Custom AI Processing" desc="Apply bespoke LLMs and automation agents." delay={0.3} icon={<Network size={22} />} isDark={false} />
+                <ProcessNode step="4" title="Strategic Output" desc="Deliver actionable insights and optimized investment decisions." delay={0.4} icon={<Box size={22} />} isDark={false} />
               </div>
             </div>
           </div>
@@ -457,7 +457,7 @@ export const Home = () => {
         </div>
       </section>
       {/* section6: client reviews (Horizontal Ticker Rows) */}
-      <section className="py-24 md:py-32 bg-gradient-to-b from-blue-50/50 via-white to-blue-50/30 relative z-10 overflow-hidden flex flex-col items-center">
+      <section className="py-24 md:py-32 bg-blue-100 relative z-10 overflow-hidden flex flex-col items-center">
         {/* Modern Mesh Gradient Background (Darker/Cinematic) */}
         <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
           <motion.div
@@ -486,7 +486,7 @@ export const Home = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl font-black text-black tracking-tighter uppercase"
+            className="text-4xl md:text-6xl font-black text-black tracking-tighter uppercase"
           >
             What our clients said
           </motion.h2>
@@ -515,7 +515,7 @@ export const Home = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
             className="rounded-[2.5rem] p-10 md:p-20 text-center relative overflow-hidden backdrop-blur-3xl shadow-xl"
-            style={{ background: "linear-gradient(to bottom right, #ffffff, #92d5d8, #052e23)" }}
+            style={{ background: "linear-gradient(to bottom right, #ffffff, #92d5d8, #4db9dc)" }}
           >
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-sapforce-accent/10 via-transparent to-transparent opacity-60"></div>
             <div className="relative z-10 max-w-3xl mx-auto">
@@ -622,13 +622,11 @@ const TickerRow = ({ items, direction = "left", speed = 60 }) => {
         {duplicatedItems.map((item, idx) => (
           <div
             key={idx}
-            className="w-[280px] sm:w-[400px] md:w-[550px] p-6 sm:p-8 rounded-3xl sm:rounded-4xl flex flex-col gap-4 sm:gap-6 relative group transition-all duration-500 cursor-pointer shadow-2xl shadow-black/10"
-            style={{
-              background: "linear-gradient(135deg, #052e23 0%, #59918F 50%, #92d5d8 100%)"
-            }}
+            className="w-[280px] sm:w-[400px] md:w-[550px] p-6 sm:p-8 rounded-3xl sm:rounded-4xl flex flex-col gap-4 sm:gap-6 relative group transition-all duration-500 cursor-pointer shadow-2xl shadow-black/10 bg-[#F8FBFF]"
+
           >
             {/* Top Quote Icon */}
-            <Quote className="absolute top-6 left-6 text-white/20 rotate-180" size={32} />
+            <Quote className="absolute top-6 left-6 text-sapforce-accent rotate-180" size={32} />
 
             <div className="flex flex-col gap-4 mt-6">
               {/* Star Rating */}
@@ -643,23 +641,23 @@ const TickerRow = ({ items, direction = "left", speed = 60 }) => {
               </div>
 
               {/* Testimonial Text */}
-              <p className="text-white/90 text-center italic font-light leading-relaxed whitespace-normal px-4">
+              <p className="text-black/90 text-center italic font-light leading-relaxed whitespace-normal px-4">
                 "{item.text}"
               </p>
 
               {/* Client Info */}
               <div className="flex flex-col items-center mt-2">
-                <span className="text-white font-black text-lg tracking-tight">
+                <span className="text-black font-black text-lg tracking-tight">
                   {item.name}
                 </span>
-                <span className="text-white/50 text-[10px] uppercase tracking-widest font-black mt-1">
+                <span className="text-black/50 text-[10px] uppercase tracking-widest font-black mt-1">
                   {item.role}
                 </span>
               </div>
             </div>
 
             {/* Bottom Quote Icon */}
-            <Quote className="absolute bottom-6 right-6 text-white/20" size={32} />
+            <Quote className="absolute bottom-6 right-6 text-sapforce-accent" size={32} />
 
             {/* Decorative Glow */}
             <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-4xl pointer-events-none"></div>
@@ -696,11 +694,11 @@ const ProcessNode = ({ step, title, desc, delay, icon, isDark = false }) => (
     transition={{ duration: 0.6, delay }}
     className="relative z-10 flex flex-col items-center text-center max-w-[240px] w-full"
   >
-    <div className={`w-16 h-16 rounded-[1.5rem] ${isDark ? 'bg-white/10 border-white/20' : 'bg-[#59918F] border-black/5'} flex items-center justify-center mb-6 text-sapforce-accent shadow-sm relative group hover:scale-105 transition-all duration-500 cursor-pointer`}>
+    <div className={`w-16 h-16 rounded-[1.5rem] ${isDark ? 'bg-black border-black' : 'bg-sapforce-accent border-black/5'} flex items-center justify-center mb-6 text-sapforce-accent shadow-sm relative group hover:scale-105 transition-all duration-500 cursor-pointer`}>
       {React.cloneElement(icon, { className: isDark ? "text-white" : "text-white" })}
       <div className={`absolute -top-2 -right-2 w-6 h-6 rounded-full ${isDark ? 'bg-white text-black' : 'bg-white text-sapforce-accent'} border-[1px] text-[10px] font-black flex items-center justify-center shadow-sm`}>{step}</div>
     </div>
-    <h4 className={`text-lg font-bold ${isDark ? 'text-white' : 'text-black'} mb-3`}>{title}</h4>
-    <p className={`text-sm ${isDark ? 'text-white/60' : 'text-gray-500'} leading-relaxed`}>{desc}</p>
+    <h4 className={`text-lg font-bold ${isDark ? 'text-black' : 'text-black'} mb-3`}>{title}</h4>
+    <p className={`text-sm ${isDark ? 'text-black/60' : 'text-gray-500'} leading-relaxed`}>{desc}</p>
   </motion.div>
 );

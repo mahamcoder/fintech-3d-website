@@ -9,9 +9,9 @@ import { Button } from '../components/ui/Button';
 
 export const AILab = () => {
   return (
-    <div className="w-full overflow-hidden bg-blue-100">
+    <div className="w-full overflow-hidden bg-blue-50/20">
       {/* SECTION 1 — HERO */}
-      <section className="relative min-h-[60vh] flex flex-col justify-center px-6 pt-40 pb-24 bg-blue-100 overflow-hidden relative z-10 border-b border-black/5">
+      <section className="relative min-h-[60vh] flex flex-col justify-center px-6 pt-40 pb-24 bg-blue-50/20 overflow-hidden relative z-10 border-b border-black/5">
         {/* Subtle Neural Network / Data Streams Vis Placeholder */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-black/[0.04] via-transparent to-transparent pointer-events-none"></div>
         <svg className="absolute inset-0 w-full h-full opacity-[0.03] pointer-events-none" viewBox="0 0 100 100" preserveAspectRatio="none">
@@ -52,19 +52,19 @@ export const AILab = () => {
               We do not just use AI tools—we build them. This laboratory builds autonomous bridges between raw financial data and intelligent capital allocation. Our systems are designed to:
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left max-w-3xl mx-auto">
-               <div className="flex items-center gap-3 bg-gradient-to-br from-white via-[#92d5d8] to-[#052e23] p-4 rounded-xl">
+               <div className="flex items-center gap-3 bg-gradient-to-br from-white via-[#92d5d8] to-[#4db9dc] p-4 rounded-xl">
                  <CheckCircle2 size={18} className="text-sapforce-accent shrink-0" />
                  <span className="font-semibold text-gray-800">Ingest financial data automatically</span>
                </div>
-               <div className="flex items-center gap-3 bg-gradient-to-br from-white via-[#92d5d8] to-[#052e23] p-4 rounded-xl">
+               <div className="flex items-center gap-3 bg-gradient-to-br from-white via-[#92d5d8] to-[#4db9dc] p-4 rounded-xl">
                  <CheckCircle2 size={18} className="text-sapforce-accent shrink-0" />
                  <span className="font-semibold text-gray-800">Analyze markets in real time</span>
                </div>
-               <div className="flex items-center gap-3 bg-gradient-to-br from-white via-[#92d5d8] to-[#052e23] p-4 rounded-xl">
+               <div className="flex items-center gap-3 bg-gradient-to-br from-white via-[#92d5d8] to-[#4db9dc] p-4 rounded-xl">
                  <CheckCircle2 size={18} className="text-sapforce-accent shrink-0" />
                  <span className="font-semibold text-gray-800">Generate deterministic valuation outputs</span>
                </div>
-               <div className="flex items-center gap-3 bg-gradient-to-br from-white via-[#92d5d8] to-[#052e23] p-4 rounded-xl">
+               <div className="flex items-center gap-3 bg-gradient-to-br from-white via-[#92d5d8] to-[#4db9dc] p-4 rounded-xl">
                  <CheckCircle2 size={18} className="text-sapforce-accent shrink-0" />
                  <span className="font-semibold text-gray-800">Reduce human dependency in execution</span>
                </div>
@@ -85,7 +85,7 @@ export const AILab = () => {
           
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
             {/* Card 1 */}
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.1 }} className="bg-gradient-to-br from-white via-[#92d5d8] to-[#052e23] p-10 rounded-[2.5rem] group relative overflow-hidden transition-all duration-500 shadow-sm hover:shadow-xl cursor-pointer flex flex-col h-full">
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.1 }} className="bg-gradient-to-br from-white via-[#92d5d8] to-[#4db9dc] p-10 rounded-[2.5rem] group relative overflow-hidden transition-all duration-500 shadow-sm hover:shadow-xl cursor-pointer flex flex-col h-full">
               <div className="mb-8 w-14 h-14 rounded-full bg-black flex items-center justify-center text-white group-hover:scale-110 transition-all duration-500 shadow-sm border border-white/10">
                 <Brain size={22} className="transition-colors" />
               </div>
@@ -102,7 +102,7 @@ export const AILab = () => {
             </motion.div>
 
             {/* Card 2 */}
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.2 }} className="bg-gradient-to-br from-white via-[#92d5d8] to-[#052e23] p-10 rounded-[2.5rem] group relative overflow-hidden transition-all duration-500 shadow-sm hover:shadow-xl cursor-pointer flex flex-col h-full">
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.2 }} className="bg-gradient-to-br from-white via-[#92d5d8] to-[#4db9dc] p-10 rounded-[2.5rem] group relative overflow-hidden transition-all duration-500 shadow-sm hover:shadow-xl cursor-pointer flex flex-col h-full">
               <div className="mb-8 w-14 h-14 rounded-full bg-black flex items-center justify-center text-white group-hover:scale-110 transition-all duration-500 shadow-sm border border-white/10">
                 <Activity size={22} className="transition-colors" />
               </div>
@@ -119,7 +119,7 @@ export const AILab = () => {
             </motion.div>
 
             {/* Card 3 */}
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.3 }} className="bg-gradient-to-br from-white via-[#92d5d8] to-[#052e23] p-10 rounded-[2.5rem] group relative overflow-hidden transition-all duration-500 shadow-sm hover:shadow-xl cursor-pointer flex flex-col h-full">
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.3 }} className="bg-gradient-to-br from-white via-[#92d5d8] to-[#4db9dc] p-10 rounded-[2.5rem] group relative overflow-hidden transition-all duration-500 shadow-sm hover:shadow-xl cursor-pointer flex flex-col h-full">
               <div className="mb-8 w-14 h-14 rounded-full bg-black flex items-center justify-center text-white group-hover:scale-110 transition-all duration-500 shadow-sm border border-white/10">
                 <Network size={22} className="transition-colors" />
               </div>
@@ -136,7 +136,7 @@ export const AILab = () => {
             </motion.div>
             
             {/* Row 2 - Centered / Expanded Items */}
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.4 }} className="bg-gradient-to-br from-white via-[#92d5d8] to-[#052e23] p-10 rounded-[2.5rem] group relative overflow-hidden transition-all duration-500 shadow-sm hover:shadow-xl cursor-pointer flex flex-col lg:col-span-1 lg:col-start-1 h-full">
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.4 }} className="bg-gradient-to-br from-white via-[#92d5d8] to-[#4db9dc] p-10 rounded-[2.5rem] group relative overflow-hidden transition-all duration-500 shadow-sm hover:shadow-xl cursor-pointer flex flex-col lg:col-span-1 lg:col-start-1 h-full">
               <div className="mb-8 w-14 h-14 rounded-full bg-black flex items-center justify-center text-white group-hover:scale-110 transition-all duration-500 shadow-sm border border-white/10">
                 <Database size={22} className="transition-colors" />
               </div>
@@ -152,7 +152,7 @@ export const AILab = () => {
               </div>
             </motion.div>
 
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.5 }} className="bg-gradient-to-br from-white via-[#92d5d8] to-[#052e23] p-10 rounded-[2.5rem] group relative overflow-hidden transition-all duration-500 shadow-sm hover:shadow-xl cursor-pointer flex flex-col lg:col-span-2 h-full">
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.5 }} className="bg-gradient-to-br from-white via-[#92d5d8] to-[#4db9dc] p-10 rounded-[2.5rem] group relative overflow-hidden transition-all duration-500 shadow-sm hover:shadow-xl cursor-pointer flex flex-col lg:col-span-2 h-full">
               <div className="flex flex-col md:flex-row gap-8 h-full">
                  <div className="flex-1">
                     <div className="mb-8 w-14 h-14 rounded-full bg-black flex items-center justify-center text-white group-hover:scale-110 transition-all duration-500 shadow-sm border border-white/10">
@@ -187,7 +187,7 @@ export const AILab = () => {
              </h2>
           </motion.div>
 
-          <div className="w-full bg-gradient-to-br from-white via-[#92d5d8] to-[#052e23] rounded-[3rem] p-12 md:p-20 relative overflow-hidden shadow-inner">
+          <div className="w-full bg-gradient-to-br from-white via-[#92d5d8] to-[#4db9dc] rounded-[3rem] p-12 md:p-20 relative overflow-hidden shadow-inner">
             <div className="flex flex-col md:flex-row justify-between relative z-10 gap-8 md:gap-4 items-center md:items-start max-w-5xl mx-auto">
                {[
                  { num: "01", title: "Data Ingestion" },
@@ -234,7 +234,7 @@ export const AILab = () => {
                   "Integrated with proprietary financial frameworks",
                   "Enterprise-grade security and scalability"
                 ].map((item, i) => (
-                  <div key={i} className="bg-gradient-to-br from-white via-[#92d5d8] to-[#052e23]  rounded-2xl p-6 flex items-center gap-5 shadow-lg hover:-translate-y-1 transition-transform">
+                  <div key={i} className="bg-gradient-to-br from-white via-[#92d5d8] to-[#4db9dc]  rounded-2xl p-6 flex items-center gap-5 shadow-lg hover:-translate-y-1 transition-transform">
                     <div className="w-10 h-10 rounded-full bg-black flex flex-shrink-0 items-center justify-center shadow-sm">
                       <ShieldCheck size={18} className="text-white" />
                     </div>
@@ -244,7 +244,7 @@ export const AILab = () => {
               </div>
             </motion.div>
             
-            <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="h-full min-h-[400px] w-full rounded-[2.5rem] bg-gradient-to-br from-white via-[#92d5d8] to-[#052e23]  relative overflow-hidden shadow-xl p-12 flex flex-col justify-center items-center text-center">
+            <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="h-full min-h-[400px] w-full rounded-[2.5rem] bg-gradient-to-br from-white via-[#92d5d8] to-[#4db9dc]  relative overflow-hidden shadow-xl p-12 flex flex-col justify-center items-center text-center">
                <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white/10 to-transparent"></div>
                <div className="w-24 h-24 rounded-full bg-black flex flex-shrink-0 items-center justify-center text-white shadow-[0_10px_40px_rgba(255,255,255,0.1)] relative z-10 mb-8 border border-white/20">
                  <Cpu size={36} />
@@ -272,7 +272,7 @@ export const AILab = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
             className="rounded-[2.5rem]  p-10 md:p-20 text-center relative overflow-hidden shadow-2xl"
-            style={{ background: "linear-gradient(to bottom right, #ffffff, #92d5d8, #052e23)" }}
+            style={{ background: "linear-gradient(to bottom right, #ffffff, #92d5d8, #4db9dc)" }}
           >
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-100/50 via-transparent to-transparent"></div>
             <div className="relative z-10 max-w-4xl mx-auto">

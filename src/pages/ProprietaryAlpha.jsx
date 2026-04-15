@@ -10,15 +10,15 @@ import { Button } from '../components/ui/Button';
 
 export const ProprietaryAlpha = () => {
   return (
-    <div className="w-full overflow-hidden bg-blue-100">
+    <div className="w-full overflow-hidden bg-blue-50/20">
       {/* SECTION 1 — HERO */}
-      <section className="relative min-h-[60vh] flex flex-col justify-center px-6 pt-40 pb-24 bg-blue-100 overflow-hidden relative z-10 border-b border-black/5">
+      <section className="relative min-h-[60vh] flex flex-col justify-center px-6 pt-40 pb-24 bg-blue-50/20 overflow-hidden relative z-10 border-b border-black/5">
         {/* Subtle Encrypted Data / Neural Net Placeholder */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-black/[0.05] via-transparent to-transparent pointer-events-none"></div>
         <svg className="absolute inset-0 w-full h-full opacity-[0.03] pointer-events-none" viewBox="0 0 100 100" preserveAspectRatio="none">
            <path d="M 0 20 C 30 20 50 80 100 80" stroke="black" strokeWidth="0.2" fill="none" />
            <path d="M 0 40 C 40 40 60 90 100 90" stroke="black" strokeWidth="0.1" fill="none" />
-           <path d="M 0 60 C 20 60 80 10 100 10" stroke="#59918F" strokeWidth="0.3" fill="none" />
+           <path d="M 0 60 C 20 60 80 10 100 10" stroke="#4db9dc" strokeWidth="0.3" fill="none" />
         </svg>
 
         <div className="container mx-auto max-w-5xl text-center relative z-10">
@@ -48,7 +48,7 @@ export const ProprietaryAlpha = () => {
         <div className="container mx-auto px-6 max-w-7xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
             {/* Visual Architecture abstraction */}
-            <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="h-full min-h-[500px] w-full rounded-[2.5rem] bg-gradient-to-br from-white via-[#92d5d8] to-[#052e23]  relative overflow-hidden flex items-center justify-center p-8 shadow-xl">
+            <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="h-full min-h-[500px] w-full rounded-[2.5rem] bg-gradient-to-br from-white via-[var(--color-sapforce-accent)] to-[#4db9dc]  relative overflow-hidden flex items-center justify-center p-8 shadow-xl">
                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white/10 to-transparent"></div>
                
                <div className="relative z-10 w-full max-w-[320px] flex flex-col gap-4">
@@ -62,10 +62,10 @@ export const ProprietaryAlpha = () => {
                   
                   <div className="flex justify-center my-1 text-white/30"><ChevronRight size={20} className="rotate-90"/></div>
                   
-                  <div className="bg-[#111] p-6 rounded-3xl shadow-[0_10px_40px_rgba(255,255,255,0.05)] text-center relative overflow-hidden border border-white/10">
-                     <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-transparent via-[#92d5d8] to-transparent opacity-50"></div>
-                     <BrainCircuit size={32} className="text-[#92d5d8] mx-auto mb-3" />
-                     <span className="text-[11px] font-black uppercase text-[#92d5d8] tracking-widest block mb-1">Black Box Processing</span>
+                  <div className="bg-sapforce-dark p-6 rounded-3xl shadow-[0_10px_40px_rgba(255,255,255,0.05)] text-center relative overflow-hidden border border-white/10">
+                     <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-transparent via-sapforce-accent to-transparent opacity-50"></div>
+                     <BrainCircuit size={32} className="text-sapforce-accent mx-auto mb-3" />
+                     <span className="text-[11px] font-black uppercase text-sapforce-accent tracking-widest block mb-1">Black Box Processing</span>
                      <span className="text-sm font-semibold text-white block">Pattern Synthesis Engine</span>
                   </div>
                   
@@ -131,11 +131,11 @@ export const ProprietaryAlpha = () => {
                <div key={idx} className="flex flex-col items-center text-center relative group w-full">
                   {/* Connecting line for desktop */}
                   {idx !== 3 && (
-                    <div className="hidden md:block absolute top-[40px] left-[65%] w-[80%] h-[1px] bg-black transition-colors group-hover:bg-[#59918F]/50"></div>
+                    <div className="hidden md:block absolute top-[40px] left-[65%] w-[80%] h-[1px] bg-black transition-colors group-hover:bg-sapforce-accent/50"></div>
                   )}
                   
-                  <div className="w-20 h-20 rounded-full border border-white/10 bg-[#1a1a1a] flex flex-col items-center justify-center text-white relative z-10 mb-6 group-hover:border-[#59918F]/50 group-hover:scale-110 transition-all shadow-2xl">
-                    {React.cloneElement(step.icon, { size: 24, className: "group-hover:text-[#59918F] transition-colors" })}
+                  <div className="w-20 h-20 rounded-full border border-white/10 bg-sapforce-dark flex flex-col items-center justify-center text-white relative z-10 mb-6 group-hover:border-sapforce-accent/50 group-hover:scale-110 transition-all shadow-2xl">
+                    {React.cloneElement(step.icon, { size: 24, className: "group-hover:text-sapforce-accent transition-colors" })}
                   </div>
                   
                   <h4 className="text-black font-semibold text-lg tracking-tight px-2 leading-tight mb-2">
@@ -179,7 +179,7 @@ export const ProprietaryAlpha = () => {
             />
             
             {/* Expanded width cards below */}
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.4 }} className="bg-gradient-to-br from-white via-[#92d5d8] to-[#052e23] p-10 rounded-[2.5rem] group relative overflow-hidden transition-all duration-500 shadow-sm hover:shadow-xl md:col-span-1 lg:col-span-2">
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.4 }} className="bg-gradient-to-br from-white via-[var(--color-sapforce-accent)] to-[#4db9dc] p-10 rounded-[2.5rem] group relative overflow-hidden transition-all duration-500 shadow-sm hover:shadow-xl md:col-span-1 lg:col-span-2">
               <div className="mb-6 w-12 h-12 rounded-full bg-black flex items-center justify-center text-white group-hover:scale-110 transition-colors duration-500 border border-white/10">
                 <Zap size={20} className="transition-colors" />
               </div>
@@ -189,9 +189,9 @@ export const ProprietaryAlpha = () => {
               </p>
             </motion.div>
 
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.5 }} className="bg-gradient-to-br from-[#052e23] to-[#111] border border-white/5 p-10 rounded-[2.5rem] group relative overflow-hidden transition-all duration-500 shadow-xl md:col-span-2 lg:col-span-1 text-white">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-[#92d5d8] opacity-20 blur-[50px]"></div>
-              <div className="mb-6 w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-[#92d5d8] relative z-10 shadow-sm border border-white/5">
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.5 }} className="bg-sapforce-dark border border-white/5 p-10 rounded-[2.5rem] group relative overflow-hidden transition-all duration-500 shadow-xl md:col-span-2 lg:col-span-1 text-white">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-[var(--color-sapforce-accent)] opacity-20 blur-[50px]"></div>
+              <div className="mb-6 w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-[var(--color-sapforce-accent)] relative z-10 shadow-sm border border-white/5">
                 <Server size={20} />
               </div>
               <h3 className="text-xl font-bold mb-3 tracking-tight text-white leading-tight relative z-10">Sovereign Model Ownership</h3>
@@ -209,7 +209,7 @@ export const ProprietaryAlpha = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-stretch">
             
             {/* ROI Engine */}
-            <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="flex flex-col h-full bg-gradient-to-br from-white via-[#92d5d8] to-[#052e23] rounded-[3rem] p-12  shadow-xl relative overflow-hidden">
+            <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="flex flex-col h-full bg-gradient-to-br from-white via-[var(--color-sapforce-accent)] to-[#4db9dc] rounded-[3rem] p-12  shadow-xl relative overflow-hidden">
                <div className="absolute -top-10 -right-10 text-white/5">
                   <TrendingUp size={200} strokeWidth={1} />
                </div>
@@ -281,7 +281,7 @@ export const ProprietaryAlpha = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
             className="rounded-[2.5rem]  p-10 md:p-20 text-center relative overflow-hidden shadow-2xl"
-            style={{ background: "linear-gradient(to bottom right, #ffffff, #92d5d8, #052e23)" }}
+            style={{ background: "linear-gradient(to bottom right, #ffffff, var(--color-sapforce-accent), #4db9dc)" }}
           >
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-100/50 via-transparent to-transparent"></div>
             <div className="relative z-10 max-w-4xl mx-auto">
@@ -315,7 +315,7 @@ const FeatureCard = ({ icon, title, desc, delay }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6, delay }}
-      className="bg-gradient-to-br from-white via-[#92d5d8] to-[#052e23]  p-10 rounded-[2.5rem] group relative overflow-hidden transition-all duration-500 shadow-sm hover:shadow-xl cursor-pointer flex flex-col h-full"
+      className="bg-gradient-to-br from-white via-[var(--color-sapforce-accent)] to-[#4db9dc]  p-10 rounded-[2.5rem] group relative overflow-hidden transition-all duration-500 shadow-sm hover:shadow-xl cursor-pointer flex flex-col h-full"
     >
       <div className="mb-6 w-12 h-12 rounded-full bg-black flex items-center justify-center text-white group-hover:scale-110 transition-colors duration-500 ">
         {React.cloneElement(icon, { className: "transition-colors" })}

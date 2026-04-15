@@ -6,10 +6,10 @@ import { Button } from '../components/ui/Button';
 
 export const Contact = () => {
   return (
-    <div className="w-full overflow-hidden bg-blue-100">
+    <div className="w-full overflow-hidden bg-blue-50/20">
 
       {/* HERO */}
-      <section className="relative min-h-[40vh] flex flex-col justify-center px-6 pt-40 pb-24 bg-blue-100 overflow-hidden relative z-10 border-b border-black/5">
+      <section className="relative min-h-[40vh] flex flex-col justify-center px-6 pt-40 pb-24 bg-blue-50/20 overflow-hidden relative z-10 border-b border-black/5">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-black/[0.04] via-transparent to-transparent pointer-events-none"></div>
         <div className="container mx-auto max-w-5xl text-center relative z-10">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
@@ -32,7 +32,7 @@ export const Contact = () => {
 
             {/* LEFT — FORM */}
             <motion.div initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }}>
-              <div className="bg-gradient-to-br from-white via-[#92d5d8] to-[#052e23]  p-10 md:p-14 rounded-[2.5rem] shadow-sm">
+              <div className="bg-gradient-to-br from-white via-[#92d5d8] to-[#4db9dc]  p-10 md:p-14 rounded-[2.5rem] shadow-sm">
                 <h2 className="text-3xl md:text-[2.5rem] font-medium tracking-tighter text-black leading-none mb-3">
                   Schedule a Consultation
                 </h2>
@@ -141,7 +141,7 @@ export const Contact = () => {
 
               {/* Info blocks */}
               <div className="space-y-4">
-                <div className="bg-gradient-to-br from-white via-[#92d5d8] to-[#052e23] rounded-2xl p-6 flex items-start gap-5 hover:-translate-y-0.5 transition-transform shadow-lg">
+                <div className="bg-gradient-to-br from-white via-[#92d5d8] to-[#4db9dc] rounded-2xl p-6 flex items-start gap-5 hover:-translate-y-0.5 transition-transform shadow-lg">
                   <div className="w-12 h-12 rounded-full bg-black border border-black shadow-sm flex items-center justify-center shrink-0">
                     <Clock size={20} className="text-white" />
                   </div>
@@ -151,7 +151,7 @@ export const Contact = () => {
                   </div>
                 </div>
 
-                <div className="bg-gradient-to-br from-white via-[#92d5d8] to-[#052e23]  rounded-2xl p-6 flex items-start gap-5 hover:-translate-y-0.5 transition-transform shadow-lg">
+                <div className="bg-gradient-to-br from-white via-[#92d5d8] to-[#4db9dc]  rounded-2xl p-6 flex items-start gap-5 hover:-translate-y-0.5 transition-transform shadow-lg">
                   <div className="w-12 h-12 rounded-full bg-black border border-black shadow-sm flex items-center justify-center shrink-0">
                     <ShieldCheck size={20} className="text-white" />
                   </div>
@@ -161,7 +161,7 @@ export const Contact = () => {
                   </div>
                 </div>
 
-                <div className="bg-gradient-to-br from-white via-[#92d5d8] to-[#052e23]  rounded-2xl p-6 flex items-start gap-5 hover:-translate-y-0.5 transition-transform shadow-lg">
+                <div className="bg-gradient-to-br from-white via-[#92d5d8] to-[#4db9dc]  rounded-2xl p-6 flex items-start gap-5 hover:-translate-y-0.5 transition-transform shadow-lg">
                   <div className="w-12 h-12 rounded-full bg-black border border-black shadow-sm flex items-center justify-center shrink-0">
                     <CalendarDays size={20} className="text-white" />
                   </div>
@@ -173,7 +173,7 @@ export const Contact = () => {
               </div>
 
               {/* Contact details */}
-              <div className="bg-gradient-to-br from-[#052e23] to-[#111] rounded-[2.5rem] p-8 md:p-10 text-white relative overflow-hidden shadow-xl border border-white/5">
+              <div className="bg-sapforce-dark rounded-[2.5rem] p-8 md:p-10 text-white relative overflow-hidden shadow-xl border border-white/5">
                 <div className="absolute top-0 right-0 w-40 h-40 bg-sapforce-accent blur-[80px] opacity-20 pointer-events-none"></div>
                 <h4 className="text-[11px] font-black uppercase tracking-widest text-gray-400 mb-6">Direct Channels</h4>
                 <div className="space-y-5 relative z-10">

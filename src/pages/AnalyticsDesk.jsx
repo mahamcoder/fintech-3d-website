@@ -53,7 +53,7 @@ export const AnalyticsDesk = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
             {/* Card 1 */}
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.1 }} className="bg-gradient-to-br from-white via-[#92d5d8] to-[#052e23]  p-10 md:p-12 rounded-[2.5rem] group relative overflow-hidden transition-all duration-500 hover:-translate-y-1 shadow-sm hover:shadow-xl cursor-pointer flex flex-col h-full">
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.1 }} className="bg-gradient-to-br from-white via-[#92d5d8] to-[#4db9dc]  p-10 md:p-12 rounded-[2.5rem] group relative overflow-hidden transition-all duration-500 hover:-translate-y-1 shadow-sm hover:shadow-xl cursor-pointer flex flex-col h-full">
               <div className="mb-8 w-14 h-14 rounded-full bg-black flex items-center justify-center shadow-sm group-hover:scale-110 transition-colors duration-500 border border-white/10 text-white">
                 <PieChart size={22} className="transition-colors" />
               </div>
@@ -61,13 +61,13 @@ export const AnalyticsDesk = () => {
               <p className="text-black/70 font-medium leading-relaxed flex-grow mb-8 text-lg">
                 Advanced DCF modeling, LBO analysis, comparable company valuation, intrinsic value modeling.
               </p>
-              <div className="flex items-center text-sm font-bold text-white gap-2 group-hover:gap-3 transition-all relative z-10 w-fit">
+              <div className="flex items-center text-sm font-bold text-black gap-2 group-hover:gap-3 transition-all relative z-10 w-fit">
                 Learn More <ArrowRight size={16} />
               </div>
             </motion.div>
 
             {/* Card 2 */}
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.2 }} className="bg-gradient-to-br from-white via-[#92d5d8] to-[#052e23]  p-10 md:p-12 rounded-[2.5rem] group relative overflow-hidden transition-all duration-500 hover:-translate-y-1 shadow-sm hover:shadow-xl cursor-pointer flex flex-col h-full">
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.2 }} className="bg-gradient-to-br from-white via-[#92d5d8] to-[#4db9dc]  p-10 md:p-12 rounded-[2.5rem] group relative overflow-hidden transition-all duration-500 hover:-translate-y-1 shadow-sm hover:shadow-xl cursor-pointer flex flex-col h-full">
               <div className="mb-8 w-14 h-14 rounded-full bg-black flex items-center justify-center shadow-sm group-hover:scale-110 transition-colors duration-500 border border-white/10 text-white">
                 <Search size={22} className="transition-colors" />
               </div>
@@ -75,13 +75,13 @@ export const AnalyticsDesk = () => {
               <p className="text-black/70 font-medium leading-relaxed flex-grow mb-8 text-lg">
                 M&A diagnostics, financial health checks, investment risk frameworks, structured evaluation systems.
               </p>
-              <div className="flex items-center text-sm font-bold text-white gap-2 group-hover:gap-3 transition-all relative z-10 w-fit">
+              <div className="flex items-center text-sm font-bold text-black gap-2 group-hover:gap-3 transition-all relative z-10 w-fit">
                 Learn More <ArrowRight size={16} />
               </div>
             </motion.div>
 
             {/* Card 3 */}
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.3 }} className="bg-gradient-to-br from-white via-[#92d5d8] to-[#052e23]  p-10 md:p-12 rounded-[2.5rem] group relative overflow-hidden transition-all duration-500 hover:-translate-y-1 shadow-sm hover:shadow-xl cursor-pointer flex flex-col h-full">
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.3 }} className="bg-gradient-to-br from-white via-[#92d5d8] to-[#4db9dc]  p-10 md:p-12 rounded-[2.5rem] group relative overflow-hidden transition-all duration-500 hover:-translate-y-1 shadow-sm hover:shadow-xl cursor-pointer flex flex-col h-full">
               <div className="mb-8 w-14 h-14 rounded-full bg-black flex items-center justify-center shadow-sm group-hover:scale-110 transition-all duration-500 border border-white/10 text-white">
                 <Building size={22} className="transition-colors" />
               </div>
@@ -95,7 +95,7 @@ export const AnalyticsDesk = () => {
             </motion.div>
 
             {/* Card 4 */}
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.4 }} className="bg-gradient-to-br from-white via-[#92d5d8] to-[#052e23] p-10 md:p-12 rounded-[2.5rem] group relative overflow-hidden transition-all duration-500 hover:-translate-y-1 shadow-sm hover:shadow-xl cursor-pointer flex flex-col h-full">
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.4 }} className="bg-gradient-to-br from-white via-[#92d5d8] to-[#4db9dc] p-10 md:p-12 rounded-[2.5rem] group relative overflow-hidden transition-all duration-500 hover:-translate-y-1 shadow-sm hover:shadow-xl cursor-pointer flex flex-col h-full">
               <div className="mb-8 w-14 h-14 rounded-full bg-black flex items-center justify-center shadow-sm group-hover:scale-110 transition-all duration-500 border border-white/10 text-white">
                 <LineChart size={22} className="transition-colors" />
               </div>
@@ -135,7 +135,7 @@ export const AnalyticsDesk = () => {
               <motion.div
                 key={i}
                 initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: i * 0.05 }}
-                className="bg-gradient-to-br from-white via-[#92d5d8] to-[#052e23]  rounded-full px-6 py-4 shadow-sm flex items-center gap-3"
+                className="bg-gradient-to-br from-white via-[#92d5d8] to-[#4db9dc]  rounded-full px-6 py-4 shadow-sm flex items-center gap-3"
               >
                 <div className="w-2 h-2 rounded-full bg-sapforce-accent shadow-sm"></div>
                 <span className="text-black font-semibold tracking-tight">{sector}</span>
@@ -196,10 +196,10 @@ export const AnalyticsDesk = () => {
                 </div>
                 <ChevronRight size={24} className="text-gray-300 hidden md:block" />
 
-                <div className="bg-gradient-to-br from-[#052e23] to-[#111] border border-white/10 rounded-2xl p-6 shadow-sm flex-1 w-full relative z-10 transform md:scale-110 hover:-translate-y-1 transition-transform">
-                  <div className="text-[10px] font-black tracking-widest text-[#92d5d8] mb-2">PHASE 3</div>
+                <div className="bg-sapforce-dark border border-white/10 rounded-2xl p-6 shadow-sm flex-1 w-full relative z-10 transform md:scale-110 hover:-translate-y-1 transition-transform">
+                  <div className="text-[10px] font-black tracking-widest text-sapforce-accent mb-2">PHASE 3</div>
                   <div className="text-lg font-bold text-white">AI Analysis</div>
-                  <div className="absolute top-0 right-0 w-16 h-16 bg-[#92d5d8] blur-xl opacity-20 rounded-full"></div>
+                  <div className="absolute top-0 right-0 w-16 h-16 bg-sapforce-accent blur-xl opacity-20 rounded-full"></div>
                 </div>
                 <ChevronRight size={24} className="text-gray-300 hidden md:block" />
 
@@ -212,7 +212,7 @@ export const AnalyticsDesk = () => {
           </div>
 
           {/* Strategic Flow Section (Horizontal Process) */}
-          <div className="w-full bg-gradient-to-br from-white via-[#92d5d8] to-[#052e23] rounded-[3rem] p-12 md:p-20 relative overflow-hidden text-center md:text-left text-white shadow-xl mt-12">
+          <div className="w-full bg-gradient-to-br from-white via-[#92d5d8] to-[#4db9dc] rounded-[3rem] p-12 md:p-20 relative overflow-hidden text-center md:text-left text-white shadow-xl mt-12">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-blue-900/40 via-transparent to-transparent pointer-events-none blur-3xl"></div>
 
             <div className="flex flex-col md:flex-row justify-between relative z-10 gap-12 md:gap-4 items-center md:items-start max-w-5xl mx-auto">
@@ -255,7 +255,7 @@ export const AnalyticsDesk = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
             className="rounded-[2.5rem]  p-10 md:p-20 text-center relative overflow-hidden shadow-xl"
-            style={{ background: "linear-gradient(to bottom right, #ffffff, #92d5d8, #052e23)" }}
+            style={{ background: "linear-gradient(to bottom right, #ffffff, #92d5d8, #4db9dc)" }}
           >
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-sapforce-accent/10 via-transparent to-transparent opacity-60"></div>
 
