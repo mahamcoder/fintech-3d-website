@@ -23,20 +23,20 @@ export const ProprietaryAlpha = () => {
 
         <div className="container mx-auto max-w-5xl text-center relative z-10">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-            <span className="text-[10px] font-black text-gray-500 uppercase tracking-[0.3em] mb-6 inline-block">Proprietary Alpha</span>
-            <h1 className="text-4xl md:text-[4.5rem] font-medium tracking-tighter text-black leading-[1.05] mb-8">
-              Train Your Own Financial <br className="hidden md:block"/>
-              <span className="text-gray-400">Intelligence Model.</span>
+            <span className="text-[10px] font-black text-gray-500 uppercase tracking-[0.3em] mb-6 inline-block">PROPRIETARY ALPHA: CUSTOM AI MODELS</span>
+            <h1 className="text-4xl md:text-[3.5rem] font-medium tracking-tighter text-black leading-[1.05] mb-8">
+              Your Investment Strategy.  <br className="hidden md:block"/>
+              <span className="text-gray-400"> Encoded Into a Sovereign AI That Thinks Like You Do.</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-500 max-w-3xl mx-auto leading-relaxed mb-10">
-              Create secure, isolated AI environments that learn from your proprietary data, investment frameworks, and decision-making logic.
+             A secure, isolated AI environment that transforms your historical trades, valuation frameworks, and risk parameters into a custom model built on your institutional logic.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/contact">
-                 <Button variant="primary" className="w-full sm:w-auto px-8 py-4">Request Private Demo</Button>
+                 <Button variant="primary" className="w-full sm:w-auto px-8 py-4">Request a Private Demonstration</Button>
               </Link>
               <Link to="#features">
-                 <Button variant="secondary" className="w-full sm:w-auto px-8 py-4 text-black border-black/10 hover:border-black">Speak to an Architect</Button>
+                 <Button variant="secondary" className="w-full sm:w-auto px-8 py-4 text-black border-black/10 hover:border-black">Speak Directly With an AI Architect</Button>
               </Link>
             </div>
           </motion.div>
@@ -53,10 +53,11 @@ export const ProprietaryAlpha = () => {
                
                <div className="relative z-10 w-full max-w-[320px] flex flex-col gap-4">
                   <div className="bg-white backdrop-blur-md p-4 rounded-2xl border border-white/10 shadow-sm text-center">
-                     <span className="text-[10px] font-black uppercase text-black/50 tracking-widest block mb-1">User Inputs</span>
+                     <span className="text-[10px] font-black uppercase text-black/50 tracking-widest block mb-1">Secure Client Data Upload</span>
                      <div className="flex justify-center gap-2 mt-2">
                         <div className="px-3 py-1 bg-black rounded-md text-xs font-semibold text-white">Trades</div>
                         <div className="px-3 py-1 bg-black rounded-md text-xs font-semibold text-white">Models</div>
+                        <div className="px-3 py-1 bg-black rounded-md text-xs font-semibold text-white">Research</div>
                      </div>
                   </div>
                   
@@ -65,16 +66,16 @@ export const ProprietaryAlpha = () => {
                   <div className="bg-sapforce-dark p-6 rounded-3xl shadow-[0_10px_40px_rgba(255,255,255,0.05)] text-center relative overflow-hidden border border-white/10">
                      <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-transparent via-sapforce-accent to-transparent opacity-50"></div>
                      <BrainCircuit size={32} className="text-sapforce-accent mx-auto mb-3" />
-                     <span className="text-[11px] font-black uppercase text-sapforce-accent tracking-widest block mb-1">Black Box Processing</span>
-                     <span className="text-sm font-semibold text-white block">Pattern Synthesis Engine</span>
+                     <span className="text-[11px] font-black uppercase text-sapforce-accent tracking-widest block mb-1">Isolated AI Training Environment</span>
+                     <span className="text-sm font-semibold text-white block">Behavioral Pattern & Logic Synthesis</span>
                   </div>
                   
                   <div className="flex justify-center my-1 text-white"><ChevronRight size={20} className="rotate-90"/></div>
                   
                   <div className="bg-white backdrop-blur-md p-4 rounded-2xl border border-white/20 shadow-sm text-center relative">
                      <div className="absolute inset-0 bg-white rounded-2xl"></div>
-                     <span className="text-[10px] font-black uppercase text-black tracking-widest block mb-1 relative z-10">Output</span>
-                     <span className="text-sm font-bold text-black relative z-10">Scalable Decision Logic</span>
+                     <span className="text-[10px] font-black uppercase text-black tracking-widest block mb-1 relative z-10">Sovereign Intelligence Output</span>
+                     <span className="text-sm font-bold text-black relative z-10">Your Model, Your Rules</span>
                   </div>
                </div>
             </motion.div>
@@ -82,24 +83,28 @@ export const ProprietaryAlpha = () => {
             <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
               <span className="text-[10px] font-black text-gray-500 uppercase tracking-[0.3em] mb-4 inline-block">The Concept</span>
               <h2 className="text-3xl md:text-[3.25rem] font-medium tracking-tighter text-black leading-none mb-8">
-                Your Investment Philosophy. Codified Into Intelligence.
+                Your Competitive Edge, Encoded and Scaled
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-10 font-medium">
-                Clients securely upload historical trades, valuation models, risk frameworks, and internal research logic. The system then trains a completely private AI model that learns your behavioral investment patterns and replicates decision-making logic at immense scale.
+              Your decision history becomes your edge. We train a private AI on your trades, valuation models, and risk rules to create a sovereign system that scales your analytical logic across assets without exposing your methodology.
               </p>
               
               <ul className="space-y-4">
                 <li className="flex items-center gap-4 bg-[#F7F8F9] p-4 rounded-xl border border-black/5">
                   <Lock size={20} className="text-sapforce-accent shrink-0" />
-                  <span className="text-black font-semibold">Trains a completely private AI model</span>
+                  <span className="text-black font-semibold">Private, sovereign AI model trained on your proprietary data</span>
                 </li>
                 <li className="flex items-center gap-4 bg-[#F7F8F9] p-4 rounded-xl border border-black/5">
                   <Activity size={20} className="text-sapforce-accent shrink-0" />
-                  <span className="text-black font-semibold">Learns behavioral investment patterns</span>
+                  <span className="text-black font-semibold">Learns behavioral patterns from your historical investment decisions</span>
                 </li>
                 <li className="flex items-center gap-4 bg-[#F7F8F9] p-4 rounded-xl border border-black/5">
                   <Zap size={20} className="text-sapforce-accent shrink-0" />
-                  <span className="text-black font-semibold">Replicates decision-making logic at scale</span>
+                  <span className="text-black font-semibold">Scales your firm's decision-making logic across thousands of assets</span>
+                </li>
+                <li className="flex items-center gap-4 bg-[#F7F8F9] p-4 rounded-xl border border-black/5">
+                  <ShieldCheck size={20} className="text-sapforce-accent shrink-0" />
+                  <span className="text-black font-semibold">Fully isolated environment with zero cross-client data exposure</span>
                 </li>
               </ul>
             </motion.div>
@@ -115,18 +120,19 @@ export const ProprietaryAlpha = () => {
 
         <div className="container mx-auto px-6 max-w-7xl relative z-10">
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="text-center mb-24">
-             <span className="text-[10px] font-black text-sapforce-accent uppercase tracking-[0.3em] mb-4 inline-block">Architecture</span>
+             <span className="text-[10px] font-black text-sapforce-accent uppercase tracking-[0.3em] mb-4 inline-block">The Process</span>
              <h2 className="text-3xl md:text-[3.25rem] font-medium tracking-tighter text-black leading-none">
-               How It Works
+               From Your Data to Your Sovereign AI<br/>
+               <span className="text-gray-400"> How Proprietary Alpha Works</span>
              </h2>
           </motion.div>
 
           <div className="flex flex-col md:flex-row justify-between relative gap-12 md:gap-4 items-center md:items-start max-w-5xl mx-auto">
              {[
-               { num: "01", icon: <Database/>, title: "Data Ingestion", desc: "Trades, Models, Research" },
-               { num: "02", icon: <Lock/>, title: "Secure Setup", desc: "Isolated AI instance" },
-               { num: "03", icon: <BrainCircuit/>, title: "Model Training", desc: "Behavior + Pattern Learning" },
-               { num: "04", icon: <Terminal/>, title: "Deployment", desc: "Private Intelligence Engine" }
+               { num: "01", icon: <Database/>, title: "Secure Data Submission", desc: "Upload trades, models, and risk frameworks via our encrypted portal." },
+               { num: "02", icon: <Lock/>, title: "Isolated Environment Setup", desc: "A fully private AI training instance where your data remains exclusively yours." },
+               { num: "03", icon: <BrainCircuit/>, title: "Behavioral Model Training", desc: "Our architects train a bespoke AI on your data, learning your firm's exact evaluation patterns." },
+               { num: "04", icon: <Terminal/>, title: "Sovereign AI Deployment", desc: "Your private engine is deployed, ready to scale your analytical capacity." }
              ].map((step, idx) => (
                <div key={idx} className="flex flex-col items-center text-center relative group w-full">
                   {/* Connecting line for desktop */}
@@ -154,51 +160,48 @@ export const ProprietaryAlpha = () => {
           <div className="text-center md:text-left mb-16">
             <span className="text-[10px] font-black text-gray-500 uppercase tracking-[0.3em] mb-4 inline-block">Differentiators</span>
             <h2 className="text-3xl md:text-[3.25rem] font-medium tracking-tighter text-black leading-none">
-              What Makes Proprietary Alpha Powerful
+              Six Reasons Proprietary <br/>
+              <span className="text-gray-400">Alpha Outperforms Generic AI Tools</span>
             </h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <FeatureCard 
               icon={<ShieldCheck size={22} />} 
-              title="Secure Isolated AI Environments" 
-              desc="Each client gets a fully private model with no cross-data exposure."
+              title="Complete Data Isolation by Architecture" 
+              desc="Every client model lives in its own secured compute environment. There is no shared infrastructure, no co-mingled data, and no risk of your analytical frameworks being exposed."
               delay={0.1}
             />
             <FeatureCard 
               icon={<BrainCircuit size={22} />} 
-              title="Behavioral Pattern Learning" 
-              desc="AI learns how your firm thinks and decides, not just what it knows."
+              title="Deep Behavioral Pattern Learning" 
+              desc="The model learns how your firm thinks, internalizing the subtle weightings and thresholds embedded in your investment decisions."
               delay={0.2}
             />
             <FeatureCard 
               icon={<Workflow size={22} />} 
-              title="Institutional Knowledge Automation" 
-              desc="Turns internal subjective expertise into structural, scalable intelligence."
+              title="Institutional Knowledge at Computational Scale" 
+              desc="The subjective expertise of your senior analysts is translated into reproducible intelligence that scales across thousands of opportunities without dilution."
               delay={0.3}
             />
-            
-            {/* Expanded width cards below */}
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.4 }} className="bg-gradient-to-br from-white via-[var(--color-sapforce-accent)] to-[#4db9dc] p-10 rounded-[2.5rem] group relative overflow-hidden transition-all duration-500 shadow-sm hover:shadow-xl md:col-span-1 lg:col-span-2">
-              <div className="mb-6 w-12 h-12 rounded-full bg-black flex items-center justify-center text-white group-hover:scale-110 transition-colors duration-500 border border-white/10">
-                <Zap size={20} className="transition-colors" />
-              </div>
-              <h3 className="text-xl font-bold mb-3 tracking-tight text-black leading-tight">High-Speed Asset Screening</h3>
-              <p className="text-black/70 font-medium leading-relaxed max-w-lg">
-                Analyze thousands of assets using your custom proprietary logic in seconds, stripping away operational bottlenecks.
-              </p>
-            </motion.div>
-
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.5 }} className="bg-sapforce-dark border border-white/5 p-10 rounded-[2.5rem] group relative overflow-hidden transition-all duration-500 shadow-xl md:col-span-2 lg:col-span-1 text-white">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-[var(--color-sapforce-accent)] opacity-20 blur-[50px]"></div>
-              <div className="mb-6 w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-[var(--color-sapforce-accent)] relative z-10 shadow-sm border border-white/5">
-                <Server size={20} />
-              </div>
-              <h3 className="text-xl font-bold mb-3 tracking-tight text-white leading-tight relative z-10">Sovereign Model Ownership</h3>
-              <p className="text-white/60 font-medium leading-relaxed relative z-10">
-                Clients strictly retain full control over their trained intelligence systems.
-              </p>
-            </motion.div>
+            <FeatureCard 
+              icon={<Zap size={22} />} 
+              title="Sub-Second Asset Screening at Massive Scale" 
+              desc="Apply your firm's exact investment criteria to thousands of assets simultaneously. Analyze in seconds what used to take weeks."
+              delay={0.4}
+            />
+            <FeatureCard 
+              icon={<Server size={22} />} 
+              title="Full Sovereign Ownership of Your Model" 
+              desc="You own your trained intelligence system outright. We architect it, but the model, outputs, and intellectual property belong entirely to you."
+              delay={0.5}
+            />
+            <FeatureCard 
+              icon={<Settings2 size={22} />} 
+              title="Continuous Model Learning and Improvement" 
+              desc="As you make new decisions, the model is retrained to incorporate them, ensuring your sovereign AI evolves alongside your methodology."
+              delay={0.6}
+            />
           </div>
         </div>
       </section>
@@ -218,7 +221,7 @@ export const ProprietaryAlpha = () => {
                    The ROI Engine
                  </h2>
                  <p className="text-xl text-black/80 font-semibold mb-8">
-                   Turning intellectual capital into computational capital.
+                   When your institutional knowledge becomes computational capital, the return on intelligence is transformational.
                  </p>
                  <div className="space-y-4">
                    <div className="flex items-start gap-4">
@@ -286,17 +289,17 @@ export const ProprietaryAlpha = () => {
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-100/50 via-transparent to-transparent"></div>
             <div className="relative z-10 max-w-4xl mx-auto">
               <h2 className="text-3xl md:text-[3.5rem] font-medium text-black mb-6 leading-[1.1] tracking-tighter">
-                Turn Your Strategy Into a <br className="hidden md:block"/><span className="text-gray-400">Living Intelligence System</span>
+                Your Investment Philosophy <br className="hidden md:block"/><span className="text-gray-600">Deserves More Than Spreadsheets</span>
               </h2>
               <p className="text-lg md:text-xl text-gray-500 mb-10 max-w-2xl mx-auto">
-                Build a private AI model that mirrors your investment philosophy and scales it across global markets.
+                Join a select group answering the AI imperative by encoding their competitive edge into a private, sovereign AI model. Onboarding is confidential and led by our AI architects.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link to="/contact">
-                  <Button variant="primary" className="w-full sm:w-auto px-8 py-4">Start Private Onboarding</Button>
+                  <Button variant="primary" className="w-full sm:w-auto px-8 py-4">Begin Private Onboarding</Button>
                 </Link>
                 <Link to="#portal">
-                  <Button variant="secondary" className="w-full sm:w-auto px-8 py-4 text-black border-black/10 hover:border-black">Request Architecture Consultation</Button>
+                  <Button variant="secondary" className="w-full sm:w-auto px-8 py-4 text-black border-black/10 hover:border-black">Request an Architecture Consultation</Button>
                 </Link>
               </div>
             </div>

@@ -14,13 +14,13 @@ export const AboutGP = () => {
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
             <span className="text-[10px] font-black text-gray-500 uppercase tracking-[0.3em] mb-6 inline-block">About GP</span>
             <h1 className="text-4xl md:text-[4.5rem] font-medium tracking-tighter text-black leading-[1.1] mb-8">
-              Bridging Finance and <span className="text-gray-400">Algorithmic Innovation</span>
+              Where Financial Mastery Meets <span className="text-gray-400">Algorithmic Precision</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-500 max-w-3xl mx-auto leading-relaxed mb-10">
-              Combining institutional-grade financial expertise with advanced AI engineering to support global capital markets.
+             GyanSarathi sits at the intersection of institutional financial analysis and advanced algorithmic engineering. It’s not just a consulting firm. It’s a human-led thinking machine.
             </p>
             <Link to="/ai-lab">
-              <Button variant="primary" className="px-8 py-4">Explore Our Capabilities</Button>
+              <Button variant="primary" className="px-8 py-4">See What We Deliver</Button>
             </Link>
           </motion.div>
         </div>
@@ -35,7 +35,7 @@ export const AboutGP = () => {
                 Executive Overview
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-10 font-medium">
-                Our leadership is built on a strong foundation in Finance and Business Analytics, combined with extensive executive experience in scaling global operations and managing complex knowledge process outsourcing. This unique blend enables the delivery of advanced financial modeling, strategic consulting, and AI-driven innovation for institutional clients.
+               GP combines an MBA in Finance and Business Analytics with executive experience in scaling global operations and managing complex KPOs. This blend of financial expertise and operational depth enables GyanSarathi to build custom AI systems not generic reports tailored to how your institution thinks.
               </p>
 
               <ul className="space-y-6">
@@ -43,19 +43,19 @@ export const AboutGP = () => {
                   <div className="w-6 h-6 rounded-full bg-black/5 flex items-center justify-center shrink-0 mt-1">
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" className="text-black"><polyline points="20 6 9 17 4 12"></polyline></svg>
                   </div>
-                  <span className="text-black font-medium leading-relaxed">MBA in Finance & Business Analytics foundation</span>
+                  <span className="text-black font-medium leading-relaxed">MBA in Finance and Business Analytics from a globally recognized institution</span>
                 </li>
                 <li className="flex items-start gap-4">
                   <div className="w-6 h-6 rounded-full bg-black/5 flex items-center justify-center shrink-0 mt-1">
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" className="text-black"><polyline points="20 6 9 17 4 12"></polyline></svg>
                   </div>
-                  <span className="text-black font-medium leading-relaxed">Global operations and outsourcing leadership</span>
+                  <span className="text-black font-medium leading-relaxed">Executive track record in scaling international operations and knowledge-intensive business units</span>
                 </li>
                 <li className="flex items-start gap-4">
                   <div className="w-6 h-6 rounded-full bg-black/5 flex items-center justify-center shrink-0 mt-1">
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" className="text-black"><polyline points="20 6 9 17 4 12"></polyline></svg>
                   </div>
-                  <span className="text-black font-medium leading-relaxed">Expertise in financial modeling and AI strategy</span>
+                  <span className="text-black font-medium leading-relaxed">Deep practitioner expertise spanning financial modeling, quantitative analysis, and AI systems architecture</span>
                 </li>
               </ul>
             </motion.div>
@@ -79,8 +79,8 @@ export const AboutGP = () => {
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M3 3v18h18" /><path d="M18 9l-5-5-6 6-4-4" /></svg>
                   </div>
                   <div className="pr-2">
-                    <div className="text-[9px] font-black text-gray-400 uppercase tracking-widest mb-1">Alpha Gen</div>
-                    <div className="text-xl font-medium tracking-tighter text-black leading-none">+24.8%</div>
+                    <div className="text-[9px] font-black text-gray-400 uppercase tracking-widest mb-1">Alpha Generated</div>
+                    <div className="text-lg font-medium tracking-tighter text-black leading-none whitespace-nowrap">+24.8% Above Benchmark</div>
                   </div>
                 </motion.div>
 
@@ -89,12 +89,12 @@ export const AboutGP = () => {
                   initial={{ y: 20, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{ delay: 0.2, duration: 0.8 }}
                   className="w-full bg-white rounded-3xl p-6 sm:p-8 shadow-[0_20px_40px_rgb(0,0,0,0.03)] border border-black/5 relative z-10"
                 >
-                  <div className="flex justify-between items-start mb-8">
+                  <div className="flex justify-between items-start mb-8 gap-4">
                     <div>
                       <div className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1.5">Portfolio Growth</div>
                       <div className="text-4xl font-medium tracking-tighter text-black leading-none">$14.2M</div>
                     </div>
-                    <div className="px-2.5 py-1 rounded-full bg-sapforce-accent/20 text-sapforce-accent text-[10px] font-bold">YTD</div>
+                    <div className="px-2.5 py-1 rounded-full bg-sapforce-accent/20 text-sapforce-accent text-[10px] font-bold whitespace-nowrap">Year to Date</div>
                   </div>
 
                   {/* Bar & Line SVG Combination */}
@@ -150,13 +150,13 @@ export const AboutGP = () => {
             style={{ background: "linear-gradient(to bottom right, #ffffff, #92d5d8, #4db9dc)" }}
           >
             <div className="relative z-10 max-w-4xl mx-auto">
-              <span className="text-[10px] font-black text-gray-500 uppercase tracking-[0.3em] mb-6 inline-block">The Philosophy</span>
+              <span className="text-[10px] font-black text-gray-500 uppercase tracking-[0.3em] mb-6 inline-block">Our Philosophy</span>
               <h2 className="text-4xl md:text-[4rem] font-medium tracking-tighter text-black leading-[1.05] mb-8">
-                Data-Driven. <br className="md:hidden" />
-                <span className="text-gray-600">AI-Accelerated.</span>
+                Data-Driven by Design. <br  />
+                <span className="text-gray-600">AI-Accelerated by Choice.</span>
               </h2>
               <p className="text-lg md:text-xl text-gray-700 leading-relaxed font-medium">
-                The future of finance belongs to organizations that combine rigorous financial modeling with intelligent automation. Our philosophy is rooted in building deep analytical frameworks and developing algorithms that transform insights into scalable decision-making systems for global markets.
+               The future of finance belongs not to those with the most data, but to those who turn it into decisions fastest. At GyanSarathi, we merge financial modeling with autonomous AI, making every insight both accurate and executable. You’re not hiring analysts or developers you’re activating an institutional intelligence system.
               </p>
             </div>
           </motion.div>
@@ -167,9 +167,9 @@ export const AboutGP = () => {
       <section className="py-24 md:py-32 bg-white relative z-10">
         <div className="container mx-auto px-6 max-w-7xl">
           <div className="text-center md:text-left mb-16">
-            <span className="text-[10px] font-black text-gray-500 uppercase tracking-[0.3em] mb-4 inline-block">What We Deliver</span>
+            <span className="text-[10px] font-black text-gray-500 uppercase tracking-[0.3em] mb-4 inline-block">Our Commitment to Every Client</span>
             <h2 className="text-3xl md:text-[3.25rem] font-medium tracking-tighter text-black leading-none">
-              Our Mandate
+              What You Can <br/> Always Expect From Us
             </h2>
           </div>
 
@@ -177,25 +177,25 @@ export const AboutGP = () => {
             <FeatureCard
               icon={<Search size={22} />}
               title="Strategic Market Research"
-              desc="Foundational multi-industry research supporting high-value investment decisions."
+              desc="Every engagement begins with deep research that maps industry dynamics, uncovers opportunities and builds the intelligence behind high-value decisions."
               delay={0.1}
             />
             <FeatureCard
               icon={<LineChart size={22} />}
-              title="Financial Analytics"
-              desc="Institutional-grade modeling, valuation, and performance diagnostics."
+              title="Institutional Financial Analytics"
+              desc="Our modeling includes DCF, LBO frameworks, comparable valuations, and portfolio diagnostics.IT built to institutional standards and delivered with boardroom clarity."
               delay={0.2}
             />
             <FeatureCard
               icon={<Cpu size={22} />}
-              title="AI Automation Deployment"
-              desc="Autonomous agents designed to streamline analytics and operational workflows."
+              title="AI Automation and Agent Deployment"
+              desc="We build autonomous AI agents that eliminate bottlenecks in analytical workflows, automating data extraction, document parsing, and reporting with precision and speed."
               delay={0.3}
             />
             <FeatureCard
               icon={<Presentation size={22} />}
-              title="C-Suite Decision Support"
-              desc="Continuous strategic support for executives across global capital markets."
+              title="24/7 C-Suite Strategic Support"
+              desc="Capital markets never sleep, and neither do we. We provide continuous advisory, model upkeep and intelligence updates to keep your leadership always informed."
               delay={0.4}
             />
           </div>
@@ -216,14 +216,16 @@ export const AboutGP = () => {
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-sapforce-accent/10 via-transparent to-transparent opacity-60"></div>
             <div className="relative z-10 max-w-3xl mx-auto">
               <h2 className="text-3xl md:text-[3.25rem] font-medium text-black mb-6 leading-[1.1] tracking-tighter">
-                Partner With Institutional-Grade Expertise
+                Ready to Work With an Analyst <span className="text-gray-600">
+                  Who Also Builds the AI?
+                </span>
               </h2>
               <p className="text-lg md:text-xl text-gray-500 mb-10">
-                Leverage finance, analytics, and AI to accelerate strategic growth.
+                Book a 30-minute strategy call to discuss your current mandate, whether it is a valuation project, an AI deployment, or a full-scale proprietary model build.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link to="/contact">
-                  <Button variant="secondary" className="w-full sm:w-auto">Schedule Strategic Consultation</Button>
+                  <Button variant="secondary" className="w-full sm:w-auto">Book Your Strategy Call</Button>
                 </Link>
               </div>
             </div>

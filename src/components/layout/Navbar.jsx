@@ -10,11 +10,11 @@ export const Navbar = () => {
 
   const navLinks = [
     { label: 'Home', path: '/' },
-    { label: 'About', path: '/about' },
-    { label: 'Analytics', path: '/analytics' },
+    { label: 'About GP', path: '/about' },
+    { label: 'Analytics Desk', path: '/analytics' },
     { label: 'AI Lab', path: '/ai-lab' },
-    { label: 'Alpha', path: '/alpha' },
-    { label: 'Research', path: '/research' },
+    { label: 'Proprietary Alpha', path: '/alpha' },
+    { label: 'Research and Insights', path: '/research' },
   ];
 
   useEffect(() => {
@@ -52,15 +52,20 @@ export const Navbar = () => {
 
             {/* Middle Section: First 6 Links */}
             <nav className="hidden lg:flex items-center gap-x-6 xl:gap-x-10 absolute left-1/2 -translate-x-1/2">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.path}
-                  to={link.path}
-                  className="text-[11px] font-black font-sans uppercase tracking-[0.2em] text-gray-400 hover:text-black transition-colors whitespace-nowrap"
-                >
-                  {link.label}
-                </Link>
-              ))}
+              {navLinks.map((link) => {
+                const isActive = location.pathname === link.path || (link.path !== '/' && location.pathname.startsWith(link.path));
+                return (
+                  <Link
+                    key={link.path}
+                    to={link.path}
+                    className={`text-[10px] font-black font-sans uppercase tracking-[0.2em] transition-colors whitespace-nowrap ${
+                      isActive ? 'text-black' : 'text-gray-400 hover:text-black'
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                );
+              })}
             </nav>
 
             {/* Right Section: Contact Button */}
@@ -93,17 +98,22 @@ export const Navbar = () => {
             className="lg:hidden fixed inset-x-4 top-32 bg-white/95 backdrop-blur-2xl z-40 rounded-[2.5rem] p-8 shadow-2xl border border-black/5"
           >
             <div className="flex flex-col gap-4">
-              {[...navLinks, { label: 'Contact', path: '/contact' }].map((link) => (
-                <Link
-                  key={link.path}
-                  to={link.path}
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="text-xl font-black text-black hover:text-sapforce-accent py-4 flex items-center justify-between border-b border-black/5 last:border-0"
-                >
-                  {link.label}
-                  <ChevronRight size={20} className="text-gray-300" />
-                </Link>
-              ))}
+              {[...navLinks, { label: 'Contact', path: '/contact' }].map((link) => {
+                const isActive = location.pathname === link.path || (link.path !== '/' && location.pathname.startsWith(link.path));
+                return (
+                  <Link
+                    key={link.path}
+                    to={link.path}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className={`text-xl font-black py-4 flex items-center justify-between border-b border-black/5 last:border-0 ${
+                      isActive ? 'text-sapforce-accent' : 'text-black hover:text-sapforce-accent'
+                    }`}
+                  >
+                    {link.label}
+                    <ChevronRight size={20} className={isActive ? 'text-sapforce-accent' : 'text-gray-300'} />
+                  </Link>
+                );
+              })}
               <div className="pt-8 w-full">
                 <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>
                   <button className="w-full py-5 rounded-2xl bg-black text-white text-lg font-black uppercase tracking-widest">

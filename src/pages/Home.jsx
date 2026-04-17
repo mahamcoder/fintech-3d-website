@@ -13,10 +13,8 @@ import video2 from '../assets/video2.mp4';
 
 export const Home = () => {
   const tickerItems = [
-    "Serving Institutional Clients Across USA",
-    "Europe",
-    "Middle East",
-    "Australia"
+    "GyanSarathi: Trusted by Capital Markets Globally",
+    "Serving Institutional Clients Across the USA and Europe and the Middle East and Australia"
   ];
 
   // ── Animation Variants ────────────────────────────────────────────────────
@@ -76,22 +74,23 @@ export const Home = () => {
           <div className="relative md:absolute  md:left-0 z-30 mt-8 md:mt-0 flex flex-col gap-8">
 
             {/* Description Text */}
-            <div className="max-w-[320px] md:mt-16">
+            <div className="max-w-[370px] md:mt-16">
+              <h1 className="text-xl md:text-2xl font-black text-black mb-4">Architecting Financial Clarity. Engineering the Future.</h1>
               <p className="text-base md:text-sm text-gray-700 font-medium leading-relaxed">
-                A platform where you can seamlessly share financial analytics, risk models, and connect with global capital markets across the digital landscape.
+                Institutional grade multi-industry financial analysis and Agentic AI product innovation for global capital markets.
               </p>
             </div>
 
             {/* Pill Buttons */}
             <div className="flex items-center gap-4">
-              <Link to="/contact">
-                <button className="bg-[#171717] text-white text-[10px] md:text-xs font-black uppercase tracking-widest px-8 py-4 rounded-full hover:bg-black transition-all shadow-lg hover:shadow-black/20 transform hover:-translate-y-0.5">
-                  Get Started
+              <Link to="/analytics">
+                <button className="bg-[#171717] text-white text-[10px] md:text-xs font-black uppercase tracking-widest px-7 py-4 rounded-full hover:bg-black transition-all shadow-lg hover:shadow-black/20 transform hover:-translate-y-0.5">
+                  Explore Analytics
                 </button>
               </Link>
               <Link to="/ai-lab">
                 <button className="bg-transparent border border-black/10 text-black text-[10px] md:text-xs font-black uppercase tracking-widest px-8 py-4 rounded-full hover:bg-black/5 transition-all transform hover:-translate-y-0.5">
-                  More
+                  Explore AI
                 </button>
               </Link>
             </div>
@@ -104,10 +103,10 @@ export const Home = () => {
                   <img src="https://i.pravatar.cc/100?img=2" alt="user" className="w-8 h-8 rounded-full border-2 border-white object-cover shadow-sm" />
                   <img src="https://i.pravatar.cc/100?img=3" alt="user" className="w-8 h-8 rounded-full border-2 border-white object-cover shadow-sm" />
                 </div>
-                <span className="text-lg font-black text-black">245K+</span>
+                <span className="text-lg font-black text-black">1200+</span>
               </div>
               <p className="text-[9px] font-bold text-gray-400 uppercase tracking-widest leading-none">
-                People joined us and <br /> chose simplicity
+                Engagements.<br /> Trusted worldwide.
               </p>
             </div>
           </div>
@@ -115,16 +114,17 @@ export const Home = () => {
           {/* RIGHT SIDE: VERTICAL TAGS */}
           <div className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 flex-col gap-12 z-30 opacity-40 hover:opacity-100 transition-opacity duration-700">
             <div className="flex flex-col items-end gap-1">
-              <span className="text-xs font-black text-black uppercase tracking-wider text-right">Web3<br />Storage</span>
+              <span className="text-xs font-black text-black uppercase tracking-wider text-right">Sovereign <br />AI Models</span>
             </div>
             <div className="flex flex-col items-end gap-1">
-              <span className="text-xs font-black text-black uppercase tracking-wider text-right">Next-gen<br />Applications</span>
+              <span className="text-xs font-black text-black uppercase tracking-wider text-right">Multi-Industry <br />Analytics</span>
             </div>
           </div>
 
           {/* BOTTOM RIGHT: INFO BOX */}
           <motion.div
             whileHover={{ scale: 1.02 }}
+            onClick={() => document.getElementById('section3')?.scrollIntoView({ behavior: 'smooth' })}
             className="hidden md:flex absolute bottom-5 right-0 z-30 bg-white/30 backdrop-blur-md border border-black/5 p-6 px-10 rounded-[2rem] flex-col gap-3 max-w-[280px] group cursor-pointer"
           >
             <div className="flex items-center justify-between">
@@ -134,7 +134,7 @@ export const Home = () => {
               </div>
             </div>
             <p className="text-[10px] font-black uppercase text-black tracking-widest leading-relaxed">
-              Find out more about <br /> the possibilities
+              See How It Works
             </p>
           </motion.div>
 
@@ -155,8 +155,9 @@ export const Home = () => {
               <TrendingUp size={24} className="text-white" />
             </div>
             <div>
-              <p className="text-[9px] font-black uppercase tracking-[0.3em] text-gray-400 mb-2">Market Cap</p>
-              <p className="text-lg font-black text-black tracking-tight leading-none">$4.2B Institutional</p>
+              <p className="text-[9px] font-black uppercase tracking-[0.3em] text-gray-400 mb-2">Capital Analyzed</p>
+              <p className="text-lg font-black text-black tracking-tight leading-none">$4.2B Across Institutional
+                Portfolios</p>
             </div>
           </motion.div>
 
@@ -172,8 +173,10 @@ export const Home = () => {
               <BarChart3 size={24} className="text-black" />
             </div>
             <div>
-              <p className="text-[9px] font-black uppercase tracking-[0.3em] text-gray-400 mb-2">AI Performance</p>
-              <p className="text-lg font-black text-black tracking-tight leading-none">99.8% Reliability</p>
+              <p className="text-[9px] font-black uppercase tracking-[0.3em] text-gray-400 mb-2">Model Reliability
+                Score</p>
+              <p className="text-lg font-black text-black tracking-tight leading-none">99.8% Uptime and Accuracy
+                Guarantee</p>
             </div>
           </motion.div>
 
@@ -189,8 +192,8 @@ export const Home = () => {
               <Users size={24} className="text-sapforce-accent" />
             </div>
             <div>
-              <p className="text-[9px] font-black uppercase tracking-[0.3em] text-gray-400 mb-2">Community</p>
-              <p className="text-lg font-black text-black tracking-tight leading-none">Global Expansion</p>
+              <p className="text-[9px] font-black uppercase tracking-[0.3em] text-gray-400 mb-2">Global Footprint</p>
+              <p className="text-lg font-black text-black tracking-tight leading-none">Serving Clients in 4 Key Markets</p>
             </div>
           </motion.div>
 
@@ -209,13 +212,13 @@ export const Home = () => {
           {/* Header Area */}
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-8">
             <div>
-              <span className="text-[10px] font-black text-sapforce-accent bg-blue-50 px-3 py-1.5 rounded-full uppercase tracking-widest mb-6 inline-block">Core Values</span>
-              <h2 className="text-4xl md:text-[2.75rem] font-medium text-gray-400 leading-[1.1] tracking-tight">The strategic</h2>
+              <span className="text-[10px] font-black text-sapforce-accent bg-blue-50 px-3 py-1.5 rounded-full uppercase tracking-widest mb-6 inline-block">What We Do</span>
+              <h2 className="text-4xl md:text-[2.75rem] font-medium text-gray-400 leading-[1.1] tracking-tight">The Strategic</h2>
               <h2 className="text-4xl md:text-[2.75rem] font-bold text-black leading-[1.1] tracking-tighter mt-1">Advantage</h2>
             </div>
-            <div className="md:max-w-[280px] pb-2">
+            <div className="md:max-w-[320px] pb-2">
               <p className="text-gray-500 text-sm md:text-base leading-relaxed">
-                Institutional-grade analytics and Agentic AI designed to accelerate high-stakes decisions.
+                We combine advanced financial modeling with next-gen AI to help sovereign funds, REITs and M&A teams move faster and smarter than the market.
               </p>
             </div>
           </div>
@@ -239,15 +242,16 @@ export const Home = () => {
               {/* Card 1b: ROI */}
               <div className="bg-[#F9FAFB] border border-black/5 rounded-[2rem] p-8 flex flex-col justify-between flex-grow min-h-[220px]">
                 <div>
-                  <h3 className="text-lg font-bold text-black mb-1.5">Multi-Industry Analytics</h3>
-                  <p className="text-sm text-gray-600 font-medium max-w-[220px] leading-relaxed">Valuation, diligence, and asset management across energy, infrastructure, real estate, and banking sectors.</p>
+                  <h3 className="text-lg font-bold text-black mb-1.5">Multi-Industry Financial Analytics</h3>
+                  <p className="text-sm text-gray-600 font-medium max-w-[220px] leading-relaxed">From energy infrastructure to investment banking, we deliver DCF
+                    modeling, LBO analysis, M and A due diligence, and yield-tracking dashboards tailored to each sector's unique financial dynamics.</p>
                 </div>
                 <div className="mt-8">
                   <div className="flex items-baseline gap-0.5">
                     <span className="text-6xl font-medium tracking-tighter text-black">90</span>
                     <span className="text-3xl font-medium text-gray-400 -translate-y-1">%</span>
                   </div>
-                  <p className="text-[11px] text-gray-400 mt-2 font-medium uppercase tracking-wider">Data accuracy & robustness</p>
+                  <p className="text-[11px] text-gray-400 mt-2 font-medium uppercase tracking-wider">Model Precision Rate Across Engagements</p>
                 </div>
               </div>
             </div>
@@ -257,15 +261,17 @@ export const Home = () => {
               {/* Card 2a: Revenue Gen */}
               <div className="bg-[#F9FAFB] border border-black/5 rounded-[2rem] p-8 flex flex-col justify-between flex-grow min-h-[220px]">
                 <div>
-                  <h3 className="text-lg font-bold text-black mb-1.5">Agentic AI & Product</h3>
-                  <p className="text-sm text-gray-600 font-medium max-w-[220px] leading-relaxed">Custom LLMs, intelligent automations, and enterprise-grade API infrastructure for financial workflows.</p>
+                  <h3 className="text-lg font-bold text-black mb-1.5">Agentic AI and Product Development</h3>
+                  <p className="text-sm text-gray-600 font-medium max-w-[220px] leading-relaxed">We build the tools your team needs tomorrow. From autonomous
+                    stock analysis agents to secure LLM fine-tuning and enterprise API
+                    infrastructure, we engineer intelligence directly into your financial workflows.</p>
                 </div>
                 <div className="mt-8 mb-2">
                   <div className="flex items-baseline gap-0">
                     <span className="text-6xl font-medium tracking-tighter text-black">$2.5</span>
                     <span className="text-4xl font-medium text-gray-400 -translate-y-2 ml-1">B+</span>
                   </div>
-                  <p className="text-[11px] text-gray-400 mt-2 font-medium uppercase tracking-wider">Capital Optimized</p>
+                  <p className="text-[11px] text-gray-400 mt-2 font-medium uppercase tracking-wider">Capital Modeled and Optimized</p>
                 </div>
               </div>
 
@@ -285,9 +291,11 @@ export const Home = () => {
               </svg>
 
               <div className="relative z-10 w-full">
-                <h3 className="text-lg font-bold text-white mb-2">Sovereign Wealth Models</h3>
+                <h3 className="text-lg font-bold text-white mb-2">Sovereign AI Training for Investment Firms</h3>
                 <p className="text-sm text-[#CCCCCC] font-medium md:max-w-[90%] leading-[1.6]">
-                  Train proprietary AI using unique investment theses to maximize ROI and accelerate decision-making.
+                  Your investment philosophy is your competitive advantage. We
+                  encode it into a fully private AI model that screens thousands of assets in
+                  seconds using your unique analytical DNA, not a generic algorithm
                 </p>
               </div>
 
@@ -336,7 +344,7 @@ export const Home = () => {
       </section>
 
       {/* SECTION 3: STRATEGIC ADVANTAGE (REDESIGNED CARD) */}
-      <section className="py-20 relative">
+      <section id="section4" className="py-20 relative">
 
 
         <div className="container mx-auto px-6 max-w-7xl relative">
@@ -353,12 +361,12 @@ export const Home = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                 >
-                  <span className="text-[10px] font-black text-sapforce-accent bg-sapforce-accent/10 px-4 py-2 rounded-full uppercase tracking-[0.3em] mb-8 inline-block">The ROI Architect</span>
+                  <span className="text-[10px] font-black text-sapforce-accent bg-sapforce-accent/10 px-4 py-2 rounded-full uppercase tracking-[0.3em] mb-8 inline-block">How We Deliver Results</span>
                   <h2 className="text-4xl md:text-6xl font-medium text-black mb-6 leading-tight tracking-tighter">
-                    The Strategic Advantage
+                    Data That Drives Decisions
                   </h2>
                   <p className="text-lg md:text-xl text-gray-500 font-sans font-light max-w-2xl mx-auto leading-relaxed">
-                    Deep financial analytics fused with custom AI models to accelerate high-stakes decisions.
+                    Every engagement turns data into clarity and combining financial modeling with custom AI to reduce risk and unlock value.
                   </p>
                 </motion.div>
               </div>
@@ -366,10 +374,10 @@ export const Home = () => {
               <div className="relative flex flex-col md:flex-row items-center md:items-start justify-between gap-12 md:gap-0 mt-12">
                 <div className="hidden md:block absolute top-[2.5rem] left-[10%] right-[10%] h-px bg-black z-0"></div>
 
-                <ProcessNode step="1" title="Data Acquisition" desc="Collect multi-industry financial and macroeconomic data." delay={0.1} icon={<Database size={22} />} isDark={false} />
-                <ProcessNode step="2" title="Advanced Analytics" desc="Run valuation models and risk diagnostics." delay={0.2} icon={<Activity size={22} />} isDark={false} />
-                <ProcessNode step="3" title="Custom AI Processing" desc="Apply bespoke LLMs and automation agents." delay={0.3} icon={<Network size={22} />} isDark={false} />
-                <ProcessNode step="4" title="Strategic Output" desc="Deliver actionable insights and optimized investment decisions." delay={0.4} icon={<Box size={22} />} isDark={false} />
+                <ProcessNode step="1" title="Intelligent Data Acquisition" desc="We ingest filings, earnings calls, macro data & proprietary datasets" delay={0.1} icon={<Database size={22} />} isDark={false} />
+                <ProcessNode step="2" title="Deep Financial Modeling" desc="We build DCF, LBO and comps with tailored risk and KPI frameworks." delay={0.2} icon={<Activity size={22} />} isDark={false} />
+                <ProcessNode step="3" title="Custom AI Processing" desc="LLMs and agents analyze data to find patterns, anomalies & outputs" delay={0.3} icon={<Network size={22} />} isDark={false} />
+                <ProcessNode step="4" title="Strategic Decision Output" desc="Boardroom-ready insights via reports, valuations & real dashboard." delay={0.4} icon={<Box size={22} />} isDark={false} />
               </div>
             </div>
           </div>
@@ -377,7 +385,7 @@ export const Home = () => {
       </section>
 
       {/* SECTION 4: service details sections  */}
-      <section className="py-24 md:py-32 bg-white relative z-10 overflow-hidden">
+      <section  className="py-24 md:py-32 bg-white relative z-10 overflow-hidden">
         <div className="container mx-auto px-6 max-w-[1400px]">
           {/* Header with Mixed Overlapping & Scattered Typography */}
           <div className="max-w-7xl mx-auto text-center mb-24 cursor-default">
@@ -475,17 +483,18 @@ export const Home = () => {
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-sapforce-accent/10 via-transparent to-transparent opacity-60"></div>
             <div className="relative z-10 max-w-3xl mx-auto">
               <h2 className="text-3xl md:text-5xl font-black text-black mb-6 leading-tight tracking-tighter">
-                Architect Your Competitive Edge
+                Your Next Strategic Advantage <br/> Starts Here
               </h2>
               <p className="text-lg md:text-xl text-gray-500 mb-10">
-                Leverage institutional-grade analytics and AI-driven automation for global capital markets.
+               Whether you need precision financial modeling, custom AI models, or analytics infrastructure, GyanSarathi delivers institutional intelligence.
+Helping your team stay ahead of the market with scalable, data-driven systems.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link to="/contact">
-                  <Button variant="secondary" className="w-full sm:w-auto">Schedule Strategic Consultation</Button>
+                  <Button variant="secondary" className="w-full sm:w-auto">Schedule Your Strategy Call</Button>
                 </Link>
                 <Link to="/ai-lab">
-                  <Button variant="secondary" className="w-full sm:w-auto text-black border-black/10 hover:border-black">Explore AI Capabilities</Button>
+                  <Button variant="secondary" className="w-full sm:w-auto text-black border-black/10 hover:border-black">Explore the AI Lab</Button>
                 </Link>
               </div>
             </div>

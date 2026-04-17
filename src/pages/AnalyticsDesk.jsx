@@ -22,19 +22,20 @@ export const AnalyticsDesk = () => {
         <div className="container mx-auto max-w-5xl text-center relative z-10">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
             <span className="text-[10px] font-black text-gray-500 uppercase tracking-[0.3em] mb-6 inline-block">The Analytics Desk</span>
-            <h1 className="text-4xl md:text-[4.5rem] font-medium tracking-tighter text-black leading-[1.05] mb-8">
-              Institutional Intelligence. <br className="hidden md:block" />
-              <span className="text-gray-400">Precision Financial Execution.</span>
+            <h1 className="text-4xl md:text-[4rem] font-medium tracking-tighter text-black leading-[1.05] mb-8">
+              We Speak the Language of Capital <br className="hidden md:block" />
+              <span className="text-gray-400">We Build the Tools to
+                Execute It.</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-500 max-w-3xl mx-auto leading-relaxed mb-10">
-              Multi-industry financial consulting powered by advanced analytics, AI-assisted modeling, and institutional research frameworks.
+              The Analytics Desk combines institutional finance with AI modeling, delivering decision-driven analysis across sectors like energy valuations and REIT diagnostics not just reports.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="#services">
-                <Button variant="primary" className="w-full sm:w-auto px-8 py-4">Explore Services</Button>
+                <Button variant="primary" className="w-full sm:w-auto px-8 py-4">View Our Service Suite</Button>
               </Link>
               <Link to="/contact">
-                <Button variant="secondary" className="w-full sm:w-auto px-8 py-4 text-black border-black/10 hover:border-black">Request Consultation</Button>
+                <Button variant="secondary" className="w-full sm:w-auto px-8 py-4 text-black border-black/10 hover:border-black">Request a Consultation Call</Button>
               </Link>
             </div>
           </motion.div>
@@ -45,9 +46,10 @@ export const AnalyticsDesk = () => {
       <section id="services" className="py-24 md:py-32 bg-white relative z-10 scroll-mt-20">
         <div className="container mx-auto px-6 max-w-7xl">
           <div className="text-center md:text-left mb-16">
-            <span className="text-[10px] font-black text-gray-500 uppercase tracking-[0.3em] mb-4 inline-block">Our Core Engines</span>
+            <span className="text-[10px] font-black text-gray-500 uppercase tracking-[0.3em] mb-4 inline-block">Our Core Service Offerings</span>
             <h2 className="text-3xl md:text-[3.25rem] font-medium tracking-tighter text-black leading-none">
-              Core Analytics Services
+              What the
+              Analytics Desk Delivers
             </h2>
           </div>
 
@@ -57,9 +59,11 @@ export const AnalyticsDesk = () => {
               <div className="mb-8 w-14 h-14 rounded-full bg-black flex items-center justify-center shadow-sm group-hover:scale-110 transition-colors duration-500 border border-white/10 text-white">
                 <PieChart size={22} className="transition-colors" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 tracking-tight text-black leading-tight">Valuation Support</h3>
+              <h3 className="text-2xl font-bold mb-4 tracking-tight text-black leading-tight">Advanced
+                Valuation
+                Support</h3>
               <p className="text-black/70 font-medium leading-relaxed flex-grow mb-8 text-lg">
-                Advanced DCF modeling, LBO analysis, comparable company valuation, intrinsic value modeling.
+                We build financial models for your biggest decisions, including DCF, LBO, comparable analysis and intrinsic valuation, all institutional-grade and stress-tested for real-world scenarios.
               </p>
               <div className="flex items-center text-sm font-bold text-black gap-2 group-hover:gap-3 transition-all relative z-10 w-fit">
                 Learn More <ArrowRight size={16} />
@@ -71,9 +75,11 @@ export const AnalyticsDesk = () => {
               <div className="mb-8 w-14 h-14 rounded-full bg-black flex items-center justify-center shadow-sm group-hover:scale-110 transition-colors duration-500 border border-white/10 text-white">
                 <Search size={22} className="transition-colors" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 tracking-tight text-black leading-tight">Due Diligence & Risk Analysis</h3>
+              <h3 className="text-2xl font-bold mb-4 tracking-tight text-black leading-tight">M and A Due
+                Diligence and
+                Risk Analysis</h3>
               <p className="text-black/70 font-medium leading-relaxed flex-grow mb-8 text-lg">
-                M&A diagnostics, financial health checks, investment risk frameworks, structured evaluation systems.
+                Before any deal closes, we perform thorough due diligence assessing financial health, uncovering hidden risks and protecting capital in M&A and equity transactions.
               </p>
               <div className="flex items-center text-sm font-bold text-black gap-2 group-hover:gap-3 transition-all relative z-10 w-fit">
                 Learn More <ArrowRight size={16} />
@@ -85,9 +91,12 @@ export const AnalyticsDesk = () => {
               <div className="mb-8 w-14 h-14 rounded-full bg-black flex items-center justify-center shadow-sm group-hover:scale-110 transition-all duration-500 border border-white/10 text-white">
                 <Building size={22} className="transition-colors" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 tracking-tight text-black leading-tight">Asset Mgmt & Investor Relations</h3>
+              <h3 className="text-2xl font-bold mb-4 tracking-tight text-black leading-tight">Asset
+                Management
+                and Investor
+                Relations</h3>
               <p className="text-black/70 font-medium leading-relaxed flex-grow mb-8 text-lg">
-                Portfolio optimization, yield tracking, reporting dashboards, institutional investor communication systems.
+                We manage your portfolio with institutional discipline, optimizing performance, tracking yield, and delivering investor-ready reporting and insights.
               </p>
               <div className="flex items-center text-sm font-bold text-black gap-2 group-hover:gap-3 transition-all relative z-10 w-fit">
                 Learn More <ArrowRight size={16} />
@@ -99,9 +108,12 @@ export const AnalyticsDesk = () => {
               <div className="mb-8 w-14 h-14 rounded-full bg-black flex items-center justify-center shadow-sm group-hover:scale-110 transition-all duration-500 border border-white/10 text-white">
                 <LineChart size={22} className="transition-colors" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 tracking-tight text-black leading-tight">Reporting & Market Research</h3>
+              <h3 className="text-2xl font-bold mb-4 tracking-tight text-black leading-tight">Executive 
+Reporting and 
+Market 
+Intelligence</h3>
               <p className="text-black/70 font-medium leading-relaxed flex-grow mb-8 text-lg">
-                C-suite reporting dashboards, KPI frameworks, macro + micro market intelligence.
+                Good decisions start with great information. We build dynamic C-suite dashboards with decision-grade KPIs and market intelligence, giving leadership a single source of truth.
               </p>
               <div className="flex items-center text-sm font-bold text-black gap-2 group-hover:gap-3 transition-all relative z-10 w-fit">
                 Learn More <ArrowRight size={16} />
@@ -116,9 +128,10 @@ export const AnalyticsDesk = () => {
         <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-black/[0.02] to-transparent pointer-events-none"></div>
         <div className="container mx-auto px-6 max-w-7xl text-center md:text-left relative z-10">
           <div className="mb-16">
-            <span className="text-[10px] font-black text-gray-500 uppercase tracking-[0.3em] mb-4 inline-block">Sectors</span>
+            <span className="text-[10px] font-black text-gray-500 uppercase tracking-[0.3em] mb-4 inline-block">Sectors We Serve</span>
             <h2 className="text-3xl md:text-[3.25rem] font-medium tracking-tighter text-black leading-[1.05] max-w-3xl">
-              Multi-Industry Expertise Across Global Capital Markets
+             From Energy to
+Investment Banking: We Know Your Industry
             </h2>
           </div>
 
@@ -126,11 +139,11 @@ export const AnalyticsDesk = () => {
             {[
               "Energy, Oil & Gas",
               "Infrastructure & Utilities",
-              "Investment Banking (RE & Infra)",
-              "REITs & Public Real Estate Markets",
-              "Hospitality & Property Management",
-              "Banking & Mortgage Services",
-              "Real Estate Financial Analytics"
+              "Investment Banking: Real Estate and Infrastructure Groups",
+              "Real Estate Investment Trusts and Publicly Traded Real Estate",
+              "Hospitality, Leisure and Property Management",
+              "Banking and Mortgage Services",
+              "Real Estate Financial Analytics and Acquisitions"
             ].map((sector, i) => (
               <motion.div
                 key={i}
@@ -152,21 +165,21 @@ export const AnalyticsDesk = () => {
           {/* Deep Capability Split Layout */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-center mb-32">
             <motion.div className="lg:col-span-5" initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
-              <span className="text-[10px] font-black text-gray-500 uppercase tracking-[0.3em] mb-4 inline-block">Deep Capability</span>
-              <h2 className="text-3xl md:text-[3rem] font-medium tracking-tighter text-black leading-[1.05] mb-8">
-                Real Estate Financial Intelligence Suite
+              <span className="text-[10px] font-black text-gray-500 uppercase tracking-[0.3em] mb-4 inline-block">Specialized Capability</span>
+              <h2 className="text-xl md:text-[2rem] font-medium tracking-tighter text-black leading-[1.05] mb-8">
+               Real Estate Financial Intelligence Suite for institutional-grade precision.
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-10 font-medium">
-                Our bespoke methodologies process vast property data into structured valuations. We serve as a secret weapon for institutional real estate groups, structuring complex deals with flawless quantitative rigor.
+                Real estate capital transactions are complex, so our Real Estate Financial Intelligence Suite delivers institutional-grade precision across the deal lifecycle from underwriting to waterfall distributions turning complexity into closed deals.
               </p>
 
               <ul className="space-y-4">
                 {[
-                  "Acquisition modeling",
-                  "Ground-up development analysis",
-                  "Cash flow structuring",
-                  "LP/GP waterfall structures",
-                  "Asset-level underwriting"
+                  "Complex acquisition modeling and feasibility analysis",
+                  "Ground-up development pro forma and phased funding analysis",
+                  "CMulti-layer cash flow structuring and distribution modeling",
+                  "LP and GP waterfall structuring with preferred return frameworks",
+                  "Asset-level underwriting for individual properties and portfolio acquisitions"
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-4">
                     <CheckCircle2 size={20} className="text-gray-400" />
@@ -265,17 +278,20 @@ export const AnalyticsDesk = () => {
 
             <div className="relative z-10 max-w-4xl mx-auto">
               <h2 className="text-3xl md:text-[3.5rem] font-medium text-black mb-6 leading-[1.1] tracking-tighter">
-                Turn Complexity into <br className="hidden md:block" /><span className="text-gray-400">Capital Clarity</span>
+                Every Complex Deal Deserves <br className="hidden md:block" /><span className="text-gray-400">a Sharper Analytical Edge</span>
               </h2>
               <p className="text-lg md:text-xl text-gray-500 mb-10 max-w-2xl mx-auto">
-                Engage institutional-grade consulting powered by AI systems built for scale, precision, and global markets.
+                Talk to our financial modeling team about your current 
+mandate. We match the right analytical framework to 
+your exact challenge and deliver results at the speed 
+your decisions require.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link to="/contact">
                   <Button variant="secondary" className="w-full sm:w-auto px-8 py-4">Schedule Strategic Call</Button>
                 </Link>
                 <Link to="#portal">
-                  <Button variant="secondary" className="w-full sm:w-auto px-8 py-4 text-black border-black/10 hover:border-black bg-white/50 backdrop-blur-md">Access Client Portal</Button>
+                  <Button variant="secondary" className="w-full sm:w-auto px-8 py-4 text-black border-black/10 hover:border-black bg-white/50 backdrop-blur-md">Access your Client Portal</Button>
                 </Link>
               </div>
             </div>

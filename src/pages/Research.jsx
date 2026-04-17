@@ -19,19 +19,19 @@ export const Research = () => {
         <div className="container mx-auto max-w-5xl text-center relative z-10">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
             <span className="text-[10px] font-black text-gray-500 uppercase tracking-[0.3em] mb-6 inline-block">Research & Insights</span>
-            <h1 className="text-4xl md:text-[4.5rem] font-medium tracking-tighter text-black leading-[1.05] mb-8">
-              Institutional Intelligence. <br className="hidden md:block"/>
-              <span className="text-gray-400">Actionable Market Insight.</span>
+            <h1 className="text-4xl md:text-[4rem] font-medium tracking-tighter text-black leading-[1.05] mb-8">
+              Where Institutional Research <br className="hidden md:block"/>
+              <span className="text-gray-400">Becomes Strategic Advantage.</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-500 max-w-3xl mx-auto leading-relaxed mb-10">
-              Deep research frameworks, macroeconomic analysis, and AI-driven financial intelligence designed for decision-makers operating at global scale.
+             Not a general blog structured frameworks, macro deep dives and intelligence reports for institutional decision-makers, designed to inform decisions, protect positions and identify opportunities.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="#insights">
-                 <Button variant="primary" className="w-full sm:w-auto px-8 py-4">Explore Research Vault</Button>
+                 <Button variant="primary" className="w-full sm:w-auto px-8 py-4">Browse the Research Vault</Button>
               </Link>
               <Link to="#vault">
-                 <Button variant="secondary" className="w-full sm:w-auto px-8 py-4 text-black border-black/10 hover:border-black">Download Frameworks</Button>
+                 <Button variant="secondary" className="w-full sm:w-auto px-8 py-4 text-black border-black/10 hover:border-black">Download Institutional Frameworks</Button>
               </Link>
             </div>
           </motion.div>
@@ -43,10 +43,10 @@ export const Research = () => {
         <div className="container mx-auto px-6 max-w-4xl text-center">
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
             <h2 className="text-3xl md:text-[3.25rem] font-medium tracking-tighter text-black leading-none mb-8">
-              Where Research Becomes Strategy
+              This Is Not a Newsletter. This Is an Intelligence System.
             </h2>
             <p className="text-lg md:text-xl text-gray-600 leading-relaxed font-medium mb-10">
-              This is not a general editorial feed. It is a structured knowledge system containing institutional-grade decision frameworks, precision macro intelligence, and high-value internal analytics. It is designed securely for serious investors, architects, and allocators.
+              Our Research Vault is a structured intelligence system built for capital allocators and senior decision-makers. Every report and analysis here uses the same methodologies deployed in active client mandates. We don't publish for reach—we publish for relevance.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center max-w-4xl mx-auto">
                <div className="bg-gradient-to-br from-white via-[#92d5d8] to-[#4db9dc] p-4 rounded-xl text-sm font-semibold text-gray-800">Structured Financial Research</div>
@@ -65,7 +65,7 @@ export const Research = () => {
             <div className="max-w-2xl">
                <span className="text-[10px] font-black text-gray-500 uppercase tracking-[0.3em] mb-4 inline-block">Standardized Access</span>
                <h2 className="text-3xl md:text-[3.25rem] font-medium tracking-tighter text-black leading-none">
-                 Industry Frameworks Vault
+                 Proprietary Frameworks Deployed in Global Mandates
                </h2>
             </div>
             <p className="text-gray-500 font-medium md:mb-2 border-l-2 border-black/10 pl-4 max-w-xs text-sm">
@@ -75,28 +75,28 @@ export const Research = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
              <VaultCard 
-               title="Capital Structure Optimization Models" 
-               desc=".XLSX template for weighted capital forecasting"
+               title="Capital Structure Optimization Framework" 
+               desc="XLSX-based model for WACC forecasting, capital stack analysis, and optimal debt-to-equity structuring."
                icon={<LayoutTemplate size={20} />}
              />
              <VaultCard 
-               title="Due Diligence Standardization Frameworks" 
-               desc="Complete 40-point diagnostic checklist system"
+               title="Due Diligence Standardization Framework" 
+               desc="A complete 40-point diagnostic checklist to standardize M&A, equity placement, and due diligence."
                icon={<Layers size={20} />}
              />
              <VaultCard 
-               title="Energy & Infra Valuation Templates" 
-               desc="Long-duration asset waterfall structures"
+               title="Energy and Infrastructure Valuation Templates" 
+               desc="Valuation templates for long-duration energy assets and infrastructure, including phased waterfall distribution models."
                icon={<Globe2 size={20} />}
              />
              <VaultCard 
-               title="Asset Management KPI Systems" 
-               desc="Executive reporting layout and metric tracking"
+               title="Asset Management KPI System" 
+               desc="Executive reporting framework with pre-built KPI dashboards and yield tracking modules for asset management teams."
                icon={<Activity size={20} />}
              />
              <VaultCard 
                title="Risk Assessment Framework Architecture" 
-               desc="Probabilistic failure-state mapping protocols"
+               desc="Probabilistic mapping protocols and scenario modeling tools to stress-test portfolios and quantify downside risk."
                icon={<FileText size={20} />}
              />
           </div>
@@ -113,16 +113,16 @@ export const Research = () => {
                <div className="mb-10">
                  <div className="w-12 h-12 rounded-full bg-sapforce-dark flex items-center justify-center text-sapforce-accent mb-6 shadow-md"><LineChart size={20}/></div>
                  <h2 className="text-2xl md:text-[2.25rem] font-medium tracking-tighter text-black leading-none mb-4">Macro Market Intelligence</h2>
-                 <p className="text-gray-500 font-medium text-lg leading-relaxed max-w-md">Institutional-grade coverage delivering Wall Street research desk output.</p>
+                 <p className="text-gray-500 font-medium text-lg leading-relaxed max-w-md">Depth equivalent to a dedicated Wall Street research desk, structured specifically for capital allocators.</p>
                </div>
                
                <div className="space-y-4">
                   {[
-                    { tag: "Global Economics", title: "Global capital flow vectors and structural shifts", date: "Q1 2026" },
-                    { tag: "Fixed Income", title: "Yield compression trends in high-rate environments", date: "DEC 2025" },
-                    { tag: "Monetary Policy", title: "Long-term interest rate impact analysis on Real Estate", date: "NOV 2025" },
-                    { tag: "Equity Strategy", title: "Defensive sector rotation behavioral patterns", date: "OCT 2025" },
-                    { tag: "LP Movement", title: "Institutional investment shifts spanning private markets", date: "SEP 2025" }
+                    { tag: "Global Economics", title: "Global Capital Flow Analysis: Structural Shifts in Q1 2026", date: "Q1 2026" },
+                    { tag: "Fixed Income", title: "Fixed Income Outlook: Navigating Yield Compression in Sustained High-Rate Environments", date: "DEC 2025" },
+                    { tag: "Monetary Policy", title: "Monetary Policy Impact on Real Estate Cap Rates & Valuations", date: "NOV 2025" },
+                    { tag: "Equity Strategy", title: "Behavioral Patterns in Defensive Sector Rotation", date: "OCT 2025" },
+                    { tag: "LP Movement", title: "LP Capital Flows: Institutional Allocation Shifts Across Markets", date: "SEP 2025" }
                   ].map((report, idx) => (
                     <div key={idx} className="group bg-white border border-black/5 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:shadow-md hover:border-black/10 transition-all cursor-pointer">
                        <div>
@@ -147,17 +147,17 @@ export const Research = () => {
                   
                   <div className="relative z-10 mb-12">
                     <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white mb-6 border border-white/5"><BrainCircuit size={20}/></div>
-                    <h2 className="text-2xl md:text-[2.25rem] font-medium tracking-tighter text-white leading-none mb-4">The Crossroads of <br/>AI & Finance</h2>
+                    <h2 className="text-2xl md:text-[2.25rem] font-medium tracking-tighter text-white leading-none mb-4">At the Crossroads of <br/>AI & Finance</h2>
                     <p className="text-white/60 font-medium text-lg leading-relaxed max-w-sm">Forward-looking thought leadership exploring the bleeding edge of intellectual automation.</p>
                   </div>
                   
                   <div className="space-y-1 relative z-10">
                      {[
-                       "How AI is permanently reshaping investment banking",
-                       "Deterministic automation in high-stakes due diligence",
-                       "Algorithmic research acceleration workflows",
-                       "LLMs operating functionally in financial modeling",
-                       "The fundamental future of institutional intelligence"
+                       "How Generative AI Is Reshaping Investment Banking",
+                       "Deterministic Automation in M&A Due Diligence",
+                       "Algorithmic Research Acceleration & Financial Analysis",
+                       "Large Language Models in Practical Financial Modeling",
+                       "The Future Belongs to AI-Augmented Analysts"
                      ].map((insight, idx) => (
                        <div key={idx} className="flex gap-4 p-4 hover:bg-white/5 rounded-xl transition-colors cursor-pointer group border-b border-white/5 last:border-0">
                           <Cpu size={18} className="text-sapforce-accent shrink-0 mt-1 opacity-80" />
@@ -185,18 +185,18 @@ export const Research = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <InsightCard 
               tag="AI Strategy" 
-              title="The Shift from Descriptive to Autonomous Models"
-              desc="Why standard dashboards are yielding to sovereign AI agents capable of executing raw financial logic."
+              title="From Descriptive Dashboards to Autonomous Decision Engines"
+              desc="While standard dashboards report what happened, sovereign AI agents dictate what to do. Examining the shift toward autonomous financial intelligence."
             />
             <InsightCard 
               tag="Macro Economics" 
-              title="Capital Constraints in European Real Estate"
-              desc="An analysis of structural gaps appearing in middle-market property financing protocols."
+              title="Capital Constraints & Financing Gaps in European Real Estate"
+              desc="Maps widening structural financing gaps across European property markets and identifies strategies best positioned to capitalize on this dislocation."
             />
             <InsightCard 
               tag="Fintech" 
-              title="API Integrity in the Age of High-Speed Trading"
-              desc="How institutional architecture is shifting away from monolithic endpoints toward zero-trust streams."
+              title="API Architecture for High-Speed Trading & Zero-Trust Streams"
+              desc="As trading velocity increases, institutional API architecture is undergoing a structural shift toward zero-trust streaming to secure massive surfaces."
             />
           </div>
         </div>
@@ -223,17 +223,17 @@ export const Research = () => {
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-100/50 via-transparent to-transparent"></div>
             <div className="relative z-10 max-w-4xl mx-auto">
               <h2 className="text-3xl md:text-[3.5rem] font-medium text-black mb-6 leading-[1.1] tracking-tighter">
-                Stay Ahead of <br className="hidden md:block"/><span className="text-gray-400">Institutional Intelligence</span>
+                Stay at the Frontier of <br className="hidden md:block"/><span className="text-gray-600">Institutional Intelligence</span>
               </h2>
               <p className="text-lg md:text-xl text-gray-500 mb-10 max-w-2xl mx-auto">
-                Access research frameworks and insights designed for decision-makers operating in global capital markets.
+                Subscribe to receive fresh frameworks, macro reports, and AI insights. Designed exclusively for institutional decision-makers and capital allocators.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link to="#subscribe">
-                  <Button variant="primary" className="w-full sm:w-auto px-8 py-4">Subscribe to Insights</Button>
+                  <Button variant="primary" className="w-full sm:w-auto px-8 py-4">Subscribe to Research Updates</Button>
                 </Link>
                 <Link to="/contact">
-                  <Button variant="secondary" className="w-full sm:w-auto px-8 py-4 text-black border-black/10 hover:border-black">Request Research Access</Button>
+                  <Button variant="secondary" className="w-full sm:w-auto px-8 py-4 text-black border-black/10 hover:border-black">Request Full Research Access</Button>
                 </Link>
               </div>
             </div>

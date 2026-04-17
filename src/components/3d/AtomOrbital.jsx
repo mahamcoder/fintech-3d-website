@@ -19,9 +19,9 @@ const OP = 'M 252,0 A 252,91 0 1,1 -252,0 A 252,91 0 1,1 252,0';
 const OP_OUTER = 'M 285,0 A 285,104 0 1,1 -285,0 A 285,104 0 1,1 285,0';
 
 const BADGES = [
-  { label: 'AI Analytics', sub: 'Real-time insights', color: '#3B82F6', posClasses: 'top-[10%] right-[2%] md:top-[25%] md:right-[20%]', delay: 0 },
-  { label: 'Global Markets', sub: '160+ countries', color: '#06B6D4', posClasses: 'top-[42%] left-[2%] md:top-[58%] md:left-[25%]', delay: 0.6 },
-  { label: '$2.5B+ Deployed', sub: 'Capital optimized', color: '#8B5CF6', posClasses: 'bottom-[2%] right-[2%] md:bottom-[10%] md:right-[25%]', delay: 1.2 },
+  { label: 'AI Analytics Engine', sub: 'Instant Valuations', color: '#3B82F6', posClasses: 'top-[10%] right-[2%] md:top-[25%] md:right-[20%]', delay: 0 },
+  { label: 'Global Market Reach', sub: '160+ countries', color: '#06B6D4', posClasses: 'top-[42%] left-[2%] md:top-[58%] md:left-[25%]', delay: 0.6 },
+  { label: 'Capital Optimized', sub: '$2.5B+ Under Analysis', color: '#8B5CF6', posClasses: 'bottom-[2%] right-[2%] md:bottom-[10%] md:right-[25%]', delay: 1.2 },
 ];
 
 export const AtomOrbital = ({ className = '' }) => (
