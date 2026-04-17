@@ -39,10 +39,12 @@ export const Footer = () => {
           Simplify payments. Scale your business. Transform<br className="hidden md:block" /> how you move money.
         </p>
 
-        <button className="px-8 py-4 mt-2 rounded-full bg-[#0F161E] text-white text-[10px] font-bold uppercase tracking-[0.2em] hover:bg-black transition-all shadow-xl inline-flex items-center justify-center gap-2.5">
-          <span className="w-1.5 h-1.5 rounded-full bg-[#4ADE80]"></span>
-          Request a call
-        </button>
+        <Link to="/contact">
+          <button className="px-8 py-4 mt-2 rounded-full bg-[#0F161E] text-white text-[10px] font-bold uppercase tracking-[0.2em] hover:bg-black transition-all shadow-xl inline-flex items-center justify-center gap-2.5">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#4ADE80]"></span>
+            Request a call
+          </button>
+        </Link>
       </div>
 
       {/* FOOTER MAIN CONTENT */}
