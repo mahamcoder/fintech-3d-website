@@ -29,7 +29,7 @@ export const AtomOrbital = ({ className = '' }) => (
 
     {/* ═══════════════════ SVG ATOM ═══════════════════ */}
     <svg viewBox="-320 -320 640 640" xmlns="http://www.w3.org/2000/svg"
-      style={{ width: '100%', height: '100%', overflow: 'visible' }} aria-hidden="true">
+      style={{ width: '100%', height: '100%', overflow: 'visible', transform: 'scale(1.10)' }} aria-hidden="true">
 
       <defs>
         {/* ── Gradient: Nucleus ── */}
@@ -115,11 +115,11 @@ export const AtomOrbital = ({ className = '' }) => (
       ══════════════════════════════════ */}
       <g opacity="0.5">
         <animateTransform attributeName="transform" type="rotate"
-          from="30 0 0" to="390 0 0" dur="35s" repeatCount="indefinite" />
+          from="30 0 0" to="390 0 0" dur="50s" repeatCount="indefinite" />
         <path id="OPO" d={OP_OUTER} fill="none" />
         {[0, 1, 2, 3].map((i) => (
           <circle key={i} r="3.5" fill="rgba(34,211,238,0.5)" filter="url(#SF)">
-            <animateMotion dur="35s" begin={`${-i * 8.75}s`} repeatCount="indefinite" rotate="none">
+            <animateMotion dur="50s" begin={`${-i * 12.5}s`} repeatCount="indefinite" rotate="none">
               <mpath href="#OPO" />
             </animateMotion>
           </circle>
@@ -127,11 +127,11 @@ export const AtomOrbital = ({ className = '' }) => (
       </g>
 
       {/* ══════════════════════════════════
-          RING 1 — equatorial, CW 20s
+          RING 1 — equatorial, CW 30s
       ══════════════════════════════════ */}
       <g>
         <animateTransform attributeName="transform" type="rotate"
-          from="0 0 0" to="360 0 0" dur="20s" repeatCount="indefinite" />
+          from="0 0 0" to="360 0 0" dur="30s" repeatCount="indefinite" />
         <path id="OR1" d={OP} fill="none" />
         {/* Glowing ring line */}
         <ellipse cx="0" cy="0" rx="252" ry="91" fill="none"
@@ -143,7 +143,7 @@ export const AtomOrbital = ({ className = '' }) => (
         {/* Large bright teal satellite */}
         <g filter="url(#SF)">
           <circle r="24" fill="url(#ST)">
-            <animateMotion dur="7s" repeatCount="indefinite" rotate="none">
+            <animateMotion dur="11s" repeatCount="indefinite" rotate="none">
               <mpath href="#OR1" />
             </animateMotion>
           </circle>
@@ -151,25 +151,25 @@ export const AtomOrbital = ({ className = '' }) => (
         {/* Small grey satellite (opposite) */}
         <g filter="url(#SF)">
           <circle r="13" fill="url(#SG)">
-            <animateMotion dur="7s" begin="-3.5s" repeatCount="indefinite" rotate="none">
+            <animateMotion dur="11s" begin="-5.5s" repeatCount="indefinite" rotate="none">
               <mpath href="#OR1" />
             </animateMotion>
           </circle>
         </g>
         {/* Tiny particle comet */}
         <circle r="4" fill="rgba(34,211,238,0.7)" filter="url(#SF)">
-          <animateMotion dur="7s" begin="-1.8s" repeatCount="indefinite" rotate="none">
+          <animateMotion dur="11s" begin="-2.8s" repeatCount="indefinite" rotate="none">
             <mpath href="#OR1" />
           </animateMotion>
         </circle>
       </g>
 
       {/* ══════════════════════════════════
-          RING 2 — 62° tilt, CCW 14s
+          RING 2 — 62° tilt, CCW 22s
       ══════════════════════════════════ */}
       <g>
         <animateTransform attributeName="transform" type="rotate"
-          from="62 0 0" to="-298 0 0" dur="14s" repeatCount="indefinite" />
+          from="62 0 0" to="-298 0 0" dur="22s" repeatCount="indefinite" />
         <path id="OR2" d={OP} fill="none" />
         <ellipse cx="0" cy="0" rx="252" ry="91" fill="none"
           stroke="rgba(34,211,238,0.45)" strokeWidth="1.8" filter="url(#RF)" />
@@ -179,7 +179,7 @@ export const AtomOrbital = ({ className = '' }) => (
         {/* Large deep teal */}
         <g filter="url(#SF)">
           <circle r="31" fill="url(#SD)">
-            <animateMotion dur="11s" repeatCount="indefinite" rotate="none">
+            <animateMotion dur="17s" repeatCount="indefinite" rotate="none">
               <mpath href="#OR2" />
             </animateMotion>
           </circle>
@@ -187,25 +187,25 @@ export const AtomOrbital = ({ className = '' }) => (
         {/* Small bright teal */}
         <g filter="url(#SF)">
           <circle r="14" fill="url(#ST)">
-            <animateMotion dur="11s" begin="-5.5s" repeatCount="indefinite" rotate="none">
+            <animateMotion dur="17s" begin="-8.5s" repeatCount="indefinite" rotate="none">
               <mpath href="#OR2" />
             </animateMotion>
           </circle>
         </g>
         {/* Comet particle */}
         <circle r="5" fill="rgba(100,230,255,0.65)" filter="url(#SF)">
-          <animateMotion dur="11s" begin="-2.5s" repeatCount="indefinite" rotate="none">
+          <animateMotion dur="17s" begin="-3.5s" repeatCount="indefinite" rotate="none">
             <mpath href="#OR2" />
           </animateMotion>
         </circle>
       </g>
 
       {/* ══════════════════════════════════
-          RING 3 — -50° tilt, CW 17s
+          RING 3 — -50° tilt, CW 26s
       ══════════════════════════════════ */}
       <g>
         <animateTransform attributeName="transform" type="rotate"
-          from="-50 0 0" to="310 0 0" dur="17s" repeatCount="indefinite" />
+          from="-50 0 0" to="310 0 0" dur="26s" repeatCount="indefinite" />
         <path id="OR3" d={OP} fill="none" />
         <ellipse cx="0" cy="0" rx="252" ry="91" fill="none"
           stroke="rgba(34,211,238,0.45)" strokeWidth="1.8" filter="url(#RF)" />
@@ -215,7 +215,7 @@ export const AtomOrbital = ({ className = '' }) => (
         {/* Medium teal */}
         <g filter="url(#SF)">
           <circle r="20" fill="url(#ST)">
-            <animateMotion dur="15s" repeatCount="indefinite" rotate="none">
+            <animateMotion dur="22s" repeatCount="indefinite" rotate="none">
               <mpath href="#OR3" />
             </animateMotion>
           </circle>
@@ -223,14 +223,14 @@ export const AtomOrbital = ({ className = '' }) => (
         {/* Small grey */}
         <g filter="url(#SF)">
           <circle r="11" fill="url(#SG)">
-            <animateMotion dur="15s" begin="-7.5s" repeatCount="indefinite" rotate="none">
+            <animateMotion dur="22s" begin="-11s" repeatCount="indefinite" rotate="none">
               <mpath href="#OR3" />
             </animateMotion>
           </circle>
         </g>
         {/* Comet particle */}
         <circle r="4" fill="rgba(34,211,238,0.6)" filter="url(#SF)">
-          <animateMotion dur="15s" begin="-3.8s" repeatCount="indefinite" rotate="none">
+          <animateMotion dur="22s" begin="-5.5s" repeatCount="indefinite" rotate="none">
             <mpath href="#OR3" />
           </animateMotion>
         </circle>
